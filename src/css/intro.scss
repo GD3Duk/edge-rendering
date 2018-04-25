@@ -1,0 +1,28 @@
+.intro {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: white;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+}
+
+.intro-container {
+  width: 50%;
+  max-width: 500px;
+}
+
+.menu {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.menu-item {
+  width: 200px;
+  height: 150px;
+  background-color: blue;
+  margin: 1em 1em 1em 1em;
+}
