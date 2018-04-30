@@ -5,6 +5,7 @@ import watchUtils = require("esri/core/watchUtils");
 
 import urbanScene from "./scenes/urban";
 import touristicScene from "./scenes/touristic";
+import nightScene from "./scenes/night";
 
 
 import * as React from "react";
@@ -23,12 +24,22 @@ export default class WebSceneView extends React.Component<WebsceneProps> {
   componentDidMount() {
     this.view = new SceneView({
       container: "view",
+      map: nightScene,
       qualityProfile: "high",
       environment: {
         lighting: {
           directShadowsEnabled: true,
           ambientOcclusionEnabled: false,
         }
+      },
+      camera: {
+        position: {
+          latitude: 40.74322863137903,
+          longitude: -73.99479961980691,
+          z: 490.647746627219
+        },
+        tilt: 66,
+        heading: 44
       }
     });
 

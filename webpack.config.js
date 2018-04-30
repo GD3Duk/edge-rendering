@@ -34,6 +34,10 @@ module.exports = {
         exclude: /node_modules/
       },
       {
+        test: /\.json$/,
+        loader: 'json-loader'
+      },
+      {
         test: /\.scss$/,
         use: [MiniCssExtractPlugin.loader, "css-loader", "sass-loader"]
       }
@@ -54,7 +58,7 @@ module.exports = {
   ],
   resolve: {
     modules: [path.resolve(__dirname, "/src"), "node_modules/"],
-    extensions: [".ts", ".tsx", ".js", ".scss"]
+    extensions: [".ts", ".tsx", ".js", ".scss", ".json"]
   },
   externals: [
     (context, request, callback) => {

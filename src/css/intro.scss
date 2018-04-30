@@ -25,6 +25,10 @@ $titleFont: 'Permanent Marker', cursive;
   max-width: 800px;
 }
 
+.description {
+  padding: 1em;
+}
+
 .title {
   font-family: $titleFont;
 }
@@ -32,6 +36,7 @@ $titleFont: 'Permanent Marker', cursive;
 .menu {
   display: flex;
   flex-wrap: wrap;
+  border-left: 0.5px solid black;
 }
 
 .menu-item img {
