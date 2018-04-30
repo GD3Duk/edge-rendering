@@ -1,7 +1,7 @@
 import SceneView = require("esri/views/SceneView");
 import SpatialReference = require("esri/geometry/SpatialReference");
-import urbanPlanningScene from "./urbanPlanning";
-import touristicScene from "./touristic";
+import urbanScene from "./scenes/urban";
+import touristicScene from "./scenes/touristic";
 import * as React from "react";
 
 export default class WebSceneView extends React.Component {
@@ -9,7 +9,7 @@ export default class WebSceneView extends React.Component {
   componentDidMount() {
     const view = new SceneView({
       container: "view",
-      map: touristicScene,
+      map: urbanScene,
       qualityProfile: "high",
       environment: {
         lighting: {
@@ -17,7 +17,7 @@ export default class WebSceneView extends React.Component {
           ambientOcclusionEnabled: false,
         }
       },
-      camera: {
+      /* camera: {
         tilt: 71.56,
         heading: 102.02,
         position: {
@@ -26,8 +26,8 @@ export default class WebSceneView extends React.Component {
           y: 6250903.845052144,
           z: 336.41605402249843
         }
-      }
-      /* camera: {
+      } */
+      camera: {
         tilt: 60.55,
         heading: 325.414,
         position: {
@@ -37,7 +37,7 @@ export default class WebSceneView extends React.Component {
           spatialReference: SpatialReference.WebMercator
         },
         fov: 20
-      } */
+      }
     });
   }
 

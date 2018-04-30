@@ -27,6 +27,20 @@ const buildingsLayer = new SceneLayer({
   },
   renderer: new ClassBreaksRenderer({
     field: "yearCompleted",
+    defaultSymbol: new MeshSymbol3D({
+      symbolLayers: [
+        new FillSymbol3DLayer({
+          material: {
+            color: "#ffffff",
+            colorMixMode: "replace"
+          },
+          edges: new SolidEdges3D({
+            color: [0, 0, 0, 0.9],
+            size: 1
+          })
+        })
+      ]
+    }),
     classBreakInfos: [{
         minValue: 0,
         maxValue: 1875,

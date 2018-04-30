@@ -4,12 +4,10 @@ import "./css/main.scss";
 import * as React from "react";
 import * as ReactDOM from "react-dom";
 
-import WebSceneView from "./components/websceneview";
+import App from "./components/app";
 
 
 ReactDOM.render(
-  <div id="container">
-    <WebSceneView/>
-  </div>,
+  <App/>,
   document.getElementById("app")
 );
