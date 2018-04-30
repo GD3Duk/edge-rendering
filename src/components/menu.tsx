@@ -2,9 +2,15 @@ import * as React from "react";
 import * as urban from "../assets/urban.png";
 import * as touristic from "../assets/touristic.png";
 
-console.log(urban);
+interface MenuProps {
+  handleSceneChange(event: any): void;
+}
 
-export default class Menu extends React.Component {
+export default class Menu extends React.Component<MenuProps, any> {
+  constructor(props: MenuProps) {
+    super(props);
+  }
+
   render() {
     return (
     <div className="intro">
@@ -12,10 +18,10 @@ export default class Menu extends React.Component {
         <h1 className="title">Edge rendering</h1>
         <div className="menu">
           <div className="menu-item">
-            <img src={urban} alt="urban visualization"/>
+            <img src={urban} alt="urban visualization" onClick = {(event: any) => this.props.handleSceneChange("urban")}/>
           </div>
           <div className="menu-item">
-            <img src={touristic} alt="urban visualization"/>
+            <img src={touristic} alt="urban visualization" onClick = {(event: any) => this.props.handleSceneChange("touristic")}/>
           </div>
         </div>
       </div>
