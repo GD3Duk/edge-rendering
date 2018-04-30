@@ -1,21 +1,32 @@
 import "./config";
 import "./css/main.scss";
 import SceneView = require("esri/views/SceneView");
-import urbanPlanningScene from "./components/urbanPlanning";
 import SpatialReference = require("esri/geometry/SpatialReference");
+import urbanPlanningScene from "./components/urbanPlanning";
+import touristicScene from "./components/touristic";
 
 
 const view = new SceneView({
   container: "view",
-  map: urbanPlanningScene,
+  map: touristicScene,
   qualityProfile: "high",
   environment: {
     lighting: {
       directShadowsEnabled: true,
-      ambientOcclusionEnabled: true,
+      ambientOcclusionEnabled: false,
     }
   },
   camera: {
+    tilt: 71.56,
+    heading: 102.02,
+    position: {
+      spatialReference: SpatialReference.WebMercator,
+      x: 254448.1467861235,
+      y: 6250903.845052144,
+      z: 336.41605402249843
+    }
+  }
+  /* camera: {
     tilt: 60.55,
     heading: 325.414,
     position: {
@@ -25,7 +36,7 @@ const view = new SceneView({
       spatialReference: SpatialReference.WebMercator
     },
     fov: 20
-  }
+  } */
 });
 
 
