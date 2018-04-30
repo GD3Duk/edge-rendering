@@ -4,6 +4,7 @@ import * as touristic from "../assets/touristic.png";
 
 interface MenuProps {
   handleSceneChange(event: any): void;
+  webscene: string | null;
 }
 
 export default class Menu extends React.Component<MenuProps, any> {
@@ -13,7 +14,7 @@ export default class Menu extends React.Component<MenuProps, any> {
 
   render() {
     return (
-    <div className="intro">
+    <div className={ "intro " + (this.props.webscene ? "low" : "") }>
       <div className="intro-container">
         <h1 className="title">Edge rendering</h1>
         <div className="menu">

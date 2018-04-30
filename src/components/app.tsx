@@ -36,11 +36,11 @@ export default class App extends React.Component<any, State> {
   }
 
   render() {
-    console.log(this.state);
+    console.log(this.state.currentScene);
     return (
       <div id="container">
         <WebSceneView webscene = { this.state.currentScene }/>
-        <Menu handleSceneChange = { this.changeScene.bind(this) }/>
+        <Menu handleSceneChange = { this.changeScene.bind(this) } webscene = { this.state.currentScene }/>
       </div>
     );
   }
