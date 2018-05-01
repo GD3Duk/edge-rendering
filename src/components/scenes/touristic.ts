@@ -39,7 +39,8 @@ const buildingsLayer = new SceneLayer({
             colorMixMode: "replace"
           },
           edges: new SketchEdges3D({
-            color: [244, 66, 113, 1],
+            //color: [244, 66, 113, 1], //pink
+            color: [121, 69, 211, 1],
             size: 2,
             extensionLength: 3
           })
