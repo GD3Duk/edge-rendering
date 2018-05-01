@@ -18,6 +18,7 @@ interface WebsceneProps {
 export default class WebSceneView extends React.Component<WebsceneProps> {
 
   view: SceneView;
+
   constructor(props: WebsceneProps) {
     super(props);
   }
@@ -36,6 +37,9 @@ export default class WebSceneView extends React.Component<WebsceneProps> {
 
     (window as any).view = this.view;
 
+    if (this.props.webscene) {
+      this.setWebscene();
+    }
   }
 
   setWebscene() {
@@ -94,9 +98,11 @@ export default class WebSceneView extends React.Component<WebsceneProps> {
   }
 
   render() {
-    this.setWebscene();
+    if (this.view) {
+      this.setWebscene();
+    }
     return (
-      <div id="view"></div>
+      <div id="view"/>
     );
   }
 }
