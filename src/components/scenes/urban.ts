@@ -13,6 +13,8 @@ import MeshSymbol3D = require("esri/symbols/MeshSymbol3D");
 import FillSymbol3DLayer = require("esri/symbols/FillSymbol3DLayer");
 import SolidEdges3D = require("esri/symbols/edges/SolidEdges3D");
 
+import * as white from "../../basemap-styles/white.json";
+
 const webscene = new WebScene({
   portalItem: {
     id: "7c694e6a153345b1b882ba1bc59f96eb"
@@ -53,7 +55,7 @@ const buildingsLayer = new SceneLayer({
               },
               edges: new SolidEdges3D({
                 color: [128, 102, 0, 1],
-                size: 1
+                size: 2
               })
             })
           ]
@@ -70,7 +72,7 @@ const buildingsLayer = new SceneLayer({
                 colorMixMode: "replace"
               },
               edges: new SolidEdges3D({
-                color: [0, 0, 0, 0.9],
+                color: [0, 0, 0, 1],
                 size: 1
               })
             })
@@ -94,11 +96,17 @@ var oldAreaLayer = new FeatureLayer({
   opacity: 0.5
 });
 
-var basemap = new VectorTileLayer({
+/* var basemap = new VectorTileLayer({
    portalItem: {
     id: "dfb04de5f3144a80bc3f9f336228d24a"
   }
+}); */
+
+const basemap =  new VectorTileLayer({
+  url: "https://basemaps.arcgis.com/b2/arcgis/rest/services/World_Basemap/VectorTileServer"
 });
+
+basemap.loadStyle(white);
 
 webscene.addMany([basemap, oldAreaLayer, buildingsLayer]);
 

@@ -28,7 +28,7 @@ export default class WebSceneView extends React.Component<WebsceneProps> {
       environment: {
         lighting: {
           directShadowsEnabled: true,
-          ambientOcclusionEnabled: false,
+          ambientOcclusionEnabled: true,
         }
       }
     });
@@ -43,12 +43,12 @@ export default class WebSceneView extends React.Component<WebsceneProps> {
         this.view.map = urbanScene;
         watchUtils.whenTrueOnce(this.view, 'ready', () => {
           this.view.camera = new Camera({
-            tilt: 60.55,
-            heading: 325.414,
+            tilt: 45,
+            heading: 319,
             position: {
-              x: 2779013.3296484053,
-              y: 8435936.990969075,
-              z: 562.1344378096983,
+              x: 2779948.050535852,
+              y: 8435152.254964657,
+              z: 1537.7454999526963,
               spatialReference: SpatialReference.WebMercator
             },
             fov: 20
