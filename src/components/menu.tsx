@@ -25,16 +25,24 @@ export default class Menu extends React.Component<MenuProps, any> {
       <div className="intro-container">
         <div className="menu">
           <div className="menu-item">
-            <img src={urban} alt="urban visualization" onClick = {(event: any) => this.props.handleSceneChange("urban")}/>
+            <img src={urban} alt="urban cartography"
+              onClick = {(event: any) => this.props.handleSceneChange("urban")}
+            />
           </div>
           <div className="menu-item">
-            <img src={touristic} alt="urban visualization" onClick = {(event: any) => this.props.handleSceneChange("touristic")}/>
+            <img src={touristic} alt="tourist map"
+              onClick = {(event: any) => this.props.handleSceneChange("touristic")}
+            />
           </div>
           <div className="menu-item">
-            <img src={night} alt="urban visualization" onClick = {(event: any) => this.props.handleSceneChange("night")}/>
+            <img src={night} alt="Manhattan by night"
+              onClick = {(event: any) => this.props.handleSceneChange("night")}
+            />
           </div>
           <div className="menu-item">
-            <img src={old} alt="old city" onClick = {(event: any) => this.props.handleSceneChange("old")}/>
+            <img src={old} alt="Old map of Lyon"
+              onClick = {(event: any) => this.props.handleSceneChange("old")}
+            />
           </div>
         </div>
       </div>
