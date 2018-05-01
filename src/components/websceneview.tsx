@@ -64,13 +64,13 @@ export default class WebSceneView extends React.Component<WebsceneProps> {
         this.view.map = touristicScene;
         watchUtils.whenTrueOnce(this.view, 'ready', () => {
           this.view.camera = new Camera({
-            tilt: 71.56,
-            heading: 102.02,
+            tilt: 72,
+            heading: 293,
             position: {
               spatialReference: SpatialReference.WebMercator,
-              x: 254448.1467861235,
-              y: 6250903.845052144,
-              z: 336.41605402249843
+              x: 256647.45275740055,
+              y: 6250474.786307236,
+              z: 390
             }
           });
         });
