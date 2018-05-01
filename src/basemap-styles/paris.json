@@ -1,0 +1,3757 @@
+{
+  "layers": [
+    {
+      "type": "background",
+      "id": "background",
+      "paint": {
+        "background-color": "#acd3ff"
+      }
+    },
+    {
+      "type": "fill",
+      "id": "Land/Not ice",
+      "filter": [
+        "==",
+        "_symbol",
+        0
+      ],
+      "minzoom": 0,
+      "source": "esri",
+      "source-layer": "Land",
+      "layout": {},
+      "paint": {
+        "fill-color": "#DDEFF3"
+      }
+    },
+    {
+      "type": "fill",
+      "id": "Land/Ice",
+      "filter": [
+        "==",
+        "_symbol",
+        1
+      ],
+      "minzoom": 0,
+      "source": "esri",
+      "source-layer": "Land",
+      "layout": {},
+      "paint": {
+        "fill-color": "#DDEFF3"
+      }
+    },
+    {
+      "type": "fill",
+      "id": "Bathymetry/depth 2 (shallow water)",
+      "filter": [
+        "==",
+        "_symbol",
+        0
+      ],
+      "maxzoom": 11,
+      "source": "esri",
+      "source-layer": "Bathymetry",
+      "layout": {},
+      "paint": {
+        "fill-color": "#acd3ff"
+      }
+    },
+    {
+      "type": "fill",
+      "id": "Bathymetry/depth 3",
+      "filter": [
+        "==",
+        "_symbol",
+        1
+      ],
+      "maxzoom": 11,
+      "source": "esri",
+      "source-layer": "Bathymetry",
+      "layout": {},
+      "paint": {
+        "fill-color": "#acd3ff"
+      }
+    },
+    {
+      "type": "fill",
+      "id": "Bathymetry/depth 4",
+      "filter": [
+        "==",
+        "_symbol",
+        2
+      ],
+      "maxzoom": 11,
+      "source": "esri",
+      "source-layer": "Bathymetry",
+      "layout": {},
+      "paint": {
+        "fill-color": "#acd3ff"
+      }
+    },
+    {
+      "type": "fill",
+      "id": "Bathymetry/depth 5",
+      "filter": [
+        "==",
+        "_symbol",
+        3
+      ],
+      "maxzoom": 11,
+      "source": "esri",
+      "source-layer": "Bathymetry",
+      "layout": {},
+      "paint": {
+        "fill-color": "#acd3ff"
+      }
+    },
+    {
+      "type": "fill",
+      "id": "Bathymetry/depth 6",
+      "filter": [
+        "==",
+        "_symbol",
+        4
+      ],
+      "maxzoom": 11,
+      "source": "esri",
+      "source-layer": "Bathymetry",
+      "layout": {},
+      "paint": {
+        "fill-color": "#acd3ff"
+      }
+    },
+    {
+      "type": "fill",
+      "id": "Bathymetry/depth 7 (deep water)",
+      "filter": [
+        "==",
+        "_symbol",
+        5
+      ],
+      "maxzoom": 11,
+      "source": "esri",
+      "source-layer": "Bathymetry",
+      "layout": {},
+      "paint": {
+        "fill-color": "#acd3ff"
+      }
+    },
+    {
+      "type": "fill",
+      "id": "Urban area",
+      "maxzoom": 12,
+      "minzoom": 5,
+      "source": "esri",
+      "source-layer": "Urban area",
+      "layout": {},
+      "paint": {
+        "fill-color": "#ebf2f2"
+      }
+    },
+    {
+      "type": "fill",
+      "id": "Vegetation small scale/High density",
+      "filter": [
+        "==",
+        "_symbol",
+        0
+      ],
+      "maxzoom": 8,
+      "source": "esri",
+      "source-layer": "Vegetation small scale",
+      "layout": {
+        "visibility": "none"
+      },
+      "paint": {
+        "fill-color": "#DDEFF3",
+        "fill-opacity": 0.2
+      }
+    },
+    {
+      "type": "fill",
+      "id": "Vegetation small scale/Low density",
+      "filter": [
+        "==",
+        "_symbol",
+        1
+      ],
+      "maxzoom": 8,
+      "source": "esri",
+      "source-layer": "Vegetation small scale",
+      "layout": {
+        "visibility": "none"
+      },
+      "paint": {
+        "fill-color": "#DDEFF3",
+        "fill-opacity": 0.2
+      }
+    },
+    {
+      "type": "fill",
+      "id": "Openspace or forest",
+      "minzoom": 12,
+      "source": "esri",
+      "source-layer": "Openspace or forest",
+      "layout": {},
+      "paint": {
+        "fill-color": "#D6E8CF"
+      }
+    },
+    {
+      "type": "fill",
+      "id": "Admin0 forest or park",
+      "minzoom": 12,
+      "source": "esri",
+      "source-layer": "Admin0 forest or park",
+      "layout": {},
+      "paint": {
+        "fill-color": "#D6E8CF"
+      }
+    },
+    {
+      "type": "fill",
+      "id": "Admin1 forest or park",
+      "minzoom": 9,
+      "source": "esri",
+      "source-layer": "Admin1 forest or park",
+      "layout": {},
+      "paint": {
+        "fill-color": "#D6E8CF"
+      }
+    },
+    {
+      "type": "fill",
+      "id": "Military",
+      "minzoom": 6,
+      "source": "esri",
+      "source-layer": "Military",
+      "layout": {
+        "visibility": "none"
+      },
+      "paint": {
+        "fill-color": "#DDEFF3",
+        "fill-outline-color": "#DDEFF3"
+      }
+    },
+    {
+      "type": "fill",
+      "id": "Transportation",
+      "minzoom": 13,
+      "source": "esri",
+      "source-layer": "Transportation",
+      "layout": {
+        "visibility": "none"
+      },
+      "paint": {
+        "fill-color": "#DDEFF3",
+        "fill-outline-color": "#DDEFF3"
+      }
+    },
+    {
+      "type": "fill",
+      "id": "Freight",
+      "minzoom": 13,
+      "source": "esri",
+      "source-layer": "Freight",
+      "layout": {
+        "visibility": "none"
+      },
+      "paint": {
+        "fill-color": "#DDEFF3"
+      }
+    },
+    {
+      "type": "fill",
+      "id": "Port",
+      "source": "esri",
+      "source-layer": "Port",
+      "layout": {
+        "visibility": "none"
+      },
+      "paint": {
+        "fill-color": "#DDEFF3",
+        "fill-outline-color": "#DDEFF3"
+      }
+    },
+    {
+      "type": "fill",
+      "id": "Industry",
+      "minzoom": 13,
+      "source": "esri",
+      "source-layer": "Industry",
+      "layout": {
+        "visibility": "none"
+      },
+      "paint": {
+        "fill-color": "#DDEFF3",
+        "fill-outline-color": "#DDEFF3"
+      }
+    },
+    {
+      "type": "fill",
+      "id": "Indigenous",
+      "minzoom": 13,
+      "source": "esri",
+      "source-layer": "Indigenous",
+      "layout": {
+        "visibility": "none"
+      },
+      "paint": {
+        "fill-color": "#DDEFF3"
+      }
+    },
+    {
+      "type": "fill",
+      "id": "Airport/Airport property",
+      "filter": [
+        "==",
+        "_symbol",
+        1
+      ],
+      "minzoom": 9,
+      "source": "esri",
+      "source-layer": "Airport",
+      "layout": {},
+      "paint": {
+        "fill-color": "#DAE8E8",
+        "fill-outline-color": "#DAE8E8"
+      }
+    },
+    {
+      "type": "fill",
+      "id": "Airport/Airport runway",
+      "filter": [
+        "==",
+        "_symbol",
+        0
+      ],
+      "minzoom": 11,
+      "source": "esri",
+      "source-layer": "Airport",
+      "layout": {},
+      "paint": {
+        "fill-color": "#DDEFF3"
+      }
+    },
+    {
+      "type": "fill",
+      "id": "Emergency",
+      "minzoom": 13,
+      "source": "esri",
+      "source-layer": "Emergency",
+      "layout": {
+        "visibility": "none"
+      },
+      "paint": {
+        "fill-color": "#DDEFF3"
+      }
+    },
+    {
+      "type": "fill",
+      "id": "Water and wastewater",
+      "minzoom": 13,
+      "source": "esri",
+      "source-layer": "Water and wastewater",
+      "layout": {
+        "visibility": "none"
+      },
+      "paint": {
+        "fill-color": "#DDEFF3",
+        "fill-outline-color": "#DDEFF3"
+      }
+    },
+    {
+      "type": "fill",
+      "id": "Government",
+      "minzoom": 11,
+      "source": "esri",
+      "source-layer": "Government",
+      "layout": {
+        "visibility": "none"
+      },
+      "paint": {
+        "fill-color": "#DDEFF3"
+      }
+    },
+    {
+      "type": "fill",
+      "id": "Zoo",
+      "minzoom": 13,
+      "source": "esri",
+      "source-layer": "Zoo",
+      "layout": {},
+      "paint": {
+        "fill-color": "#D6E8CF"
+      }
+    },
+    {
+      "type": "fill",
+      "id": "Landmark",
+      "minzoom": 13,
+      "source": "esri",
+      "source-layer": "Landmark",
+      "layout": {
+        "visibility": "none"
+      },
+      "paint": {
+        "fill-color": "#DDEFF3"
+      }
+    },
+    {
+      "type": "fill",
+      "id": "Pedestrian",
+      "minzoom": 13,
+      "source": "esri",
+      "source-layer": "Pedestrian",
+      "layout": {
+        "visibility": "none"
+      },
+      "paint": {
+        "fill-color": "#D9C6AD"
+      }
+    },
+    {
+      "type": "fill",
+      "id": "Park or farming",
+      "minzoom": 11,
+      "source": "esri",
+      "source-layer": "Park or farming",
+      "layout": {},
+      "paint": {
+        "fill-color": "#D6E8CF"
+      }
+    },
+    {
+      "type": "fill",
+      "id": "Education",
+      "minzoom": 11,
+      "source": "esri",
+      "source-layer": "Education",
+      "layout": {
+        "visibility": "none"
+      },
+      "paint": {
+        "fill-color": "#DDEFF3"
+      }
+    },
+    {
+      "type": "fill",
+      "id": "Finance",
+      "minzoom": 13,
+      "source": "esri",
+      "source-layer": "Finance",
+      "layout": {
+        "visibility": "none"
+      },
+      "paint": {
+        "fill-color": "#DDEFF3"
+      }
+    },
+    {
+      "type": "fill",
+      "id": "Retail",
+      "minzoom": 13,
+      "source": "esri",
+      "source-layer": "Retail",
+      "layout": {
+        "visibility": "none"
+      },
+      "paint": {
+        "fill-color": "#DDEFF3"
+      }
+    },
+    {
+      "type": "fill",
+      "id": "Cemetery",
+      "minzoom": 13,
+      "source": "esri",
+      "source-layer": "Cemetery",
+      "layout": {},
+      "paint": {
+        "fill-color": "#DDEFF3"
+      }
+    },
+    {
+      "type": "fill",
+      "id": "Golf course",
+      "minzoom": 11,
+      "source": "esri",
+      "source-layer": "Golf course",
+      "layout": {},
+      "paint": {
+        "fill-color": "#DDEFF3",
+        "fill-outline-color": "#DDEFF3"
+      }
+    },
+    {
+      "type": "fill",
+      "id": "Medical",
+      "minzoom": 11,
+      "source": "esri",
+      "source-layer": "Medical",
+      "layout": {
+        "visibility": "none"
+      },
+      "paint": {
+        "fill-color": "#DDEFF3",
+        "fill-outline-color": "#DDEFF3"
+      }
+    },
+    {
+      "type": "fill",
+      "id": "Water area large scale/Lake or river",
+      "filter": [
+        "==",
+        "_symbol",
+        0
+      ],
+      "maxzoom": 11,
+      "minzoom": 7,
+      "source": "esri",
+      "source-layer": "Water area large scale",
+      "layout": {},
+      "paint": {
+        "fill-color": "#acd3ff"
+      }
+    },
+    {
+      "type": "fill",
+      "id": "Water area large scale/Lake intermittent",
+      "filter": [
+        "==",
+        "_symbol",
+        1
+      ],
+      "maxzoom": 11,
+      "minzoom": 7,
+      "source": "esri",
+      "source-layer": "Water area large scale",
+      "layout": {},
+      "paint": {
+        "fill-pattern": "Water area large scale/Lake intermittent"
+      }
+    },
+    {
+      "type": "fill",
+      "id": "Water area medium scale/Lake or river",
+      "filter": [
+        "==",
+        "_symbol",
+        0
+      ],
+      "maxzoom": 7,
+      "minzoom": 5,
+      "source": "esri",
+      "source-layer": "Water area medium scale",
+      "layout": {},
+      "paint": {
+        "fill-color": "#acd3ff"
+      }
+    },
+    {
+      "type": "fill",
+      "id": "Water area medium scale/Lake intermittent",
+      "filter": [
+        "==",
+        "_symbol",
+        1
+      ],
+      "maxzoom": 7,
+      "minzoom": 5,
+      "source": "esri",
+      "source-layer": "Water area medium scale",
+      "layout": {},
+      "paint": {
+        "fill-pattern": "Water area medium scale/Lake intermittent"
+      }
+    },
+    {
+      "type": "fill",
+      "id": "Water area small scale",
+      "maxzoom": 5,
+      "minzoom": 1,
+      "source": "esri",
+      "source-layer": "Water area small scale",
+      "layout": {},
+      "paint": {
+        "fill-color": "#acd3ff",
+        "fill-outline-color": "#acd3ff"
+      }
+    },
+    {
+      "type": "fill",
+      "id": "Water area/Lake, river or bay",
+      "filter": [
+        "==",
+        "_symbol",
+        6
+      ],
+      "minzoom": 11,
+      "source": "esri",
+      "source-layer": "Water area",
+      "layout": {},
+      "paint": {
+        "fill-color": "#acd3ff",
+        "fill-outline-color": "#acd3ff"
+      }
+    },
+    {
+      "type": "fill",
+      "id": "Water area/Inundated area",
+      "filter": [
+        "==",
+        "_symbol",
+        4
+      ],
+      "minzoom": 12,
+      "source": "esri",
+      "source-layer": "Water area",
+      "layout": {
+        "visibility": "none"
+      },
+      "paint": {
+        "fill-color": "#acd3ff"
+      }
+    },
+    {
+      "type": "fill",
+      "id": "Water area/Playa",
+      "filter": [
+        "==",
+        "_symbol",
+        1
+      ],
+      "minzoom": 12,
+      "source": "esri",
+      "source-layer": "Water area",
+      "layout": {
+        "visibility": "none"
+      },
+      "paint": {
+        "fill-pattern": "Water area/Playa"
+      }
+    },
+    {
+      "type": "fill",
+      "id": "Water area/Lake or river intermittent",
+      "filter": [
+        "==",
+        "_symbol",
+        5
+      ],
+      "minzoom": 11,
+      "source": "esri",
+      "source-layer": "Water area",
+      "layout": {},
+      "paint": {
+        "fill-pattern": "Water area/Lake or river intermittent"
+      }
+    },
+    {
+      "type": "fill",
+      "id": "Water area/Ice mass",
+      "filter": [
+        "==",
+        "_symbol",
+        2
+      ],
+      "minzoom": 11,
+      "source": "esri",
+      "source-layer": "Water area",
+      "layout": {
+        "visibility": "none"
+      },
+      "paint": {
+        "fill-pattern": "Water area/Ice mass"
+      }
+    },
+    {
+      "type": "fill",
+      "id": "Water area/Swamp or marsh",
+      "filter": [
+        "==",
+        "_symbol",
+        3
+      ],
+      "minzoom": 11,
+      "source": "esri",
+      "source-layer": "Water area",
+      "layout": {
+        "visibility": "none"
+      },
+      "paint": {
+        "fill-pattern": "Water area/Swamp or marsh"
+      }
+    },
+    {
+      "type": "line",
+      "id": "Water line large scale/Stream or river",
+      "filter": [
+        "==",
+        "_symbol",
+        0
+      ],
+      "maxzoom": 11,
+      "minzoom": 7,
+      "source": "esri",
+      "source-layer": "Water line large scale",
+      "layout": {
+        "line-cap": "round",
+        "line-join": "round"
+      },
+      "paint": {
+        "line-color": "#dbdbe2",
+        "line-width": {
+          "base": 1.2,
+          "stops": [
+            [
+              7,
+              1
+            ],
+            [
+              11,
+              1.33333
+            ]
+          ]
+        }
+      }
+    },
+    {
+      "type": "line",
+      "id": "Water line large scale/Stream or river intermittent",
+      "filter": [
+        "==",
+        "_symbol",
+        1
+      ],
+      "maxzoom": 11,
+      "minzoom": 7,
+      "source": "esri",
+      "source-layer": "Water line large scale",
+      "layout": {
+        "line-cap": "round",
+        "line-join": "round"
+      },
+      "paint": {
+        "line-color": "#dbdbe2",
+        "line-width": {
+          "base": 1.2,
+          "stops": [
+            [
+              7,
+              0.5
+            ],
+            [
+              11,
+              1.33333
+            ]
+          ]
+        }
+      }
+    },
+    {
+      "type": "line",
+      "id": "Water line large scale/Canal or ditch/1",
+      "filter": [
+        "==",
+        "_symbol",
+        2
+      ],
+      "maxzoom": 11,
+      "minzoom": 10,
+      "source": "esri",
+      "source-layer": "Water line large scale",
+      "layout": {
+        "line-join": "round"
+      },
+      "paint": {
+        "line-color": "#dbdbe2",
+        "line-width": {
+          "base": 1.2,
+          "stops": [
+            [
+              7,
+              0.533333
+            ],
+            [
+              11,
+              0.533333
+            ]
+          ]
+        }
+      }
+    },
+    {
+      "type": "symbol",
+      "id": "Water line large scale/Canal or ditch/0",
+      "filter": [
+        "==",
+        "_symbol",
+        2
+      ],
+      "maxzoom": 11,
+      "minzoom": 7,
+      "source": "esri",
+      "source-layer": "Water line large scale",
+      "layout": {
+        "icon-padding": 1,
+        "symbol-avoid-edges": true,
+        "symbol-placement": "line",
+        "icon-image": "Water line large scale/Canal or ditch/0",
+        "icon-allow-overlap": true
+      },
+      "paint": {}
+    },
+    {
+      "type": "line",
+      "id": "Water line large scale/Dam, weir, levee or waterfall",
+      "filter": [
+        "==",
+        "_symbol",
+        3
+      ],
+      "maxzoom": 11,
+      "minzoom": 7,
+      "source": "esri",
+      "source-layer": "Water line large scale",
+      "layout": {
+        "line-cap": "round",
+        "line-join": "round"
+      },
+      "paint": {
+        "line-color": "#dbdbe2",
+        "line-width": {
+          "base": 1.2,
+          "stops": [
+            [
+              7,
+              0.5
+            ],
+            [
+              11,
+              1.33333
+            ]
+          ]
+        }
+      }
+    },
+    {
+      "type": "line",
+      "id": "Water line medium scale",
+      "maxzoom": 7,
+      "minzoom": 5,
+      "source": "esri",
+      "source-layer": "Water line medium scale",
+      "layout": {
+        "line-join": "round"
+      },
+      "paint": {
+        "line-color": "#FFFFFF",
+        "line-width": {
+          "base": 1.2,
+          "stops": [
+            [
+              5,
+              0.5
+            ],
+            [
+              7,
+              1.33333
+            ]
+          ]
+        }
+      }
+    },
+    {
+      "type": "line",
+      "id": "Water line small scale",
+      "maxzoom": 5,
+      "minzoom": 5,
+      "source": "esri",
+      "source-layer": "Water line small scale",
+      "layout": {
+        "line-join": "round"
+      },
+      "paint": {
+        "line-color": "#FFFFFF",
+        "line-width": {
+          "base": 1.2,
+          "stops": [
+            [
+              1,
+              0.5
+            ],
+            [
+              5,
+              1.33333
+            ]
+          ]
+        }
+      }
+    },
+    {
+      "type": "line",
+      "id": "Water line/Canal or ditch/1",
+      "filter": [
+        "==",
+        "_symbol",
+        0
+      ],
+      "minzoom": 11,
+      "source": "esri",
+      "source-layer": "Water line",
+      "layout": {
+        "line-cap": "round"
+      },
+      "paint": {
+        "line-color": "#FFFFFF",
+        "line-width": {
+          "base": 1.2,
+          "stops": [
+            [
+              11,
+              2
+            ],
+            [
+              14,
+              2
+            ],
+            [
+              17,
+              2
+            ]
+          ]
+        }
+      }
+    },
+    {
+      "type": "symbol",
+      "id": "Water line/Canal or ditch/0",
+      "filter": [
+        "==",
+        "_symbol",
+        0
+      ],
+      "minzoom": 11,
+      "source": "esri",
+      "source-layer": "Water line",
+      "layout": {
+        "icon-padding": 1,
+        "symbol-avoid-edges": true,
+        "symbol-placement": "line",
+        "icon-image": "Water line/Canal or ditch/0",
+        "icon-allow-overlap": true
+      },
+      "paint": {}
+    },
+    {
+      "type": "line",
+      "id": "Water line/Stream or river intermittent",
+      "filter": [
+        "==",
+        "_symbol",
+        1
+      ],
+      "minzoom": 11,
+      "source": "esri",
+      "source-layer": "Water line",
+      "layout": {},
+      "paint": {
+        "line-dasharray": [
+          8,
+          3
+        ],
+        "line-color": "#acd3ff",
+        "line-width": {
+          "base": 1.2,
+          "stops": [
+            [
+              11,
+              1
+            ],
+            [
+              14,
+              1.3333
+            ],
+            [
+              17,
+              2
+            ]
+          ]
+        }
+      }
+    },
+    {
+      "type": "line",
+      "id": "Water line/Stream or river",
+      "filter": [
+        "==",
+        "_symbol",
+        2
+      ],
+      "minzoom": 11,
+      "source": "esri",
+      "source-layer": "Water line",
+      "layout": {
+        "line-cap": "round"
+      },
+      "paint": {
+        "line-color": "#acd3ff",
+        "line-width": {
+          "base": 1.2,
+          "stops": [
+            [
+              11,
+              1
+            ],
+            [
+              14,
+              1.3333
+            ],
+            [
+              17,
+              2.66667
+            ]
+          ]
+        }
+      }
+    },
+    {
+      "type": "fill",
+      "id": "Landscape/Green openspace",
+      "filter": [
+        "==",
+        "_symbol",
+        1
+      ],
+      "minzoom": 14,
+      "source": "esri",
+      "source-layer": "Landscape",
+      "layout": {
+        "visibility": "none"
+      },
+      "paint": {
+        "fill-color": "#DDEFF3"
+      }
+    },
+    {
+      "type": "fill",
+      "id": "Landscape/Grass",
+      "filter": [
+        "==",
+        "_symbol",
+        2
+      ],
+      "minzoom": 14,
+      "source": "esri",
+      "source-layer": "Landscape",
+      "layout": {
+        "visibility": "none"
+      },
+      "paint": {
+        "fill-color": "#DDEFF3"
+      }
+    },
+    {
+      "type": "fill",
+      "id": "Landscape/Dirt",
+      "filter": [
+        "==",
+        "_symbol",
+        0
+      ],
+      "minzoom": 14,
+      "source": "esri",
+      "source-layer": "Landscape",
+      "layout": {
+        "visibility": "none"
+      },
+      "paint": {
+        "fill-color": "#DDEFF3"
+      }
+    },
+    {
+      "type": "fill",
+      "id": "Landscape/Pool or fountain",
+      "filter": [
+        "==",
+        "_symbol",
+        3
+      ],
+      "minzoom": 14,
+      "source": "esri",
+      "source-layer": "Landscape",
+      "layout": {
+        "visibility": "none"
+      },
+      "paint": {
+        "fill-color": "#DDEFF3"
+      }
+    },
+    {
+      "type": "fill",
+      "id": "Sport/Golf putting or tee ground",
+      "filter": [
+        "==",
+        "_symbol",
+        1
+      ],
+      "minzoom": 15,
+      "source": "esri",
+      "source-layer": "Sport",
+      "layout": {},
+      "paint": {
+        "fill-color": "#DDEFF3",
+        "fill-outline-color": "#DDEFF3"
+      }
+    },
+    {
+      "type": "fill",
+      "id": "Sport/Field or court",
+      "filter": [
+        "==",
+        "_symbol",
+        3
+      ],
+      "minzoom": 15,
+      "source": "esri",
+      "source-layer": "Sport",
+      "layout": {
+        "visibility": "none"
+      },
+      "paint": {
+        "fill-color": "#DDEFF3",
+        "fill-outline-color": "#DDEFF3"
+      }
+    },
+    {
+      "type": "fill",
+      "id": "Sport/Baseball field",
+      "filter": [
+        "==",
+        "_symbol",
+        5
+      ],
+      "minzoom": 15,
+      "source": "esri",
+      "source-layer": "Sport",
+      "layout": {
+        "visibility": "none"
+      },
+      "paint": {
+        "fill-color": "#DDEFF3",
+        "fill-outline-color": "#DDEFF3"
+      }
+    },
+    {
+      "type": "fill",
+      "id": "Sport/Hardcourt",
+      "filter": [
+        "==",
+        "_symbol",
+        7
+      ],
+      "minzoom": 15,
+      "source": "esri",
+      "source-layer": "Sport",
+      "layout": {
+        "visibility": "none"
+      },
+      "paint": {
+        "fill-color": "#DDEFF3",
+        "fill-outline-color": "#DDEFF3"
+      }
+    },
+    {
+      "type": "fill",
+      "id": "Sport/Field or court exterior",
+      "filter": [
+        "==",
+        "_symbol",
+        4
+      ],
+      "minzoom": 15,
+      "source": "esri",
+      "source-layer": "Sport",
+      "layout": {
+        "visibility": "none"
+      },
+      "paint": {
+        "fill-color": "#DDEFF3"
+      }
+    },
+    {
+      "type": "fill",
+      "id": "Sport/Golf fairway",
+      "filter": [
+        "==",
+        "_symbol",
+        2
+      ],
+      "minzoom": 15,
+      "source": "esri",
+      "source-layer": "Sport",
+      "layout": {
+        "visibility": "none"
+      },
+      "paint": {
+        "fill-color": "#DDEFF3"
+      }
+    },
+    {
+      "type": "fill",
+      "id": "Sport/Golf sand",
+      "filter": [
+        "==",
+        "_symbol",
+        0
+      ],
+      "minzoom": 15,
+      "source": "esri",
+      "source-layer": "Sport",
+      "layout": {
+        "visibility": "none"
+      },
+      "paint": {
+        "fill-color": "#DDEFF3"
+      }
+    },
+    {
+      "type": "fill",
+      "id": "Sport/Golf water hazard",
+      "filter": [
+        "==",
+        "_symbol",
+        6
+      ],
+      "minzoom": 15,
+      "source": "esri",
+      "source-layer": "Sport",
+      "layout": {
+        "visibility": "none"
+      },
+      "paint": {
+        "fill-color": "#DDEFF3"
+      }
+    },
+    {
+      "type": "fill",
+      "id": "Sport/Track",
+      "filter": [
+        "==",
+        "_symbol",
+        8
+      ],
+      "minzoom": 15,
+      "source": "esri",
+      "source-layer": "Sport",
+      "layout": {
+        "visibility": "none"
+      },
+      "paint": {
+        "fill-color": "#DDEFF3"
+      }
+    },
+    {
+      "type": "fill",
+      "id": "Pavement/Garden",
+      "filter": [
+        "==",
+        "_symbol",
+        1
+      ],
+      "minzoom": 17,
+      "source": "esri",
+      "source-layer": "Pavement",
+      "layout": {
+        "visibility": "none"
+      },
+      "paint": {
+        "fill-color": "#DDEFF3",
+        "fill-outline-color": "#DDEFF3"
+      }
+    },
+    {
+      "type": "fill",
+      "id": "Pavement/Parking",
+      "filter": [
+        "==",
+        "_symbol",
+        2
+      ],
+      "minzoom": 17,
+      "source": "esri",
+      "source-layer": "Pavement",
+      "layout": {
+        "visibility": "none"
+      },
+      "paint": {
+        "fill-color": "#DDEFF3"
+      }
+    },
+    {
+      "type": "fill",
+      "id": "Pavement/Bike, walk or pedestrian",
+      "filter": [
+        "==",
+        "_symbol",
+        0
+      ],
+      "minzoom": 17,
+      "source": "esri",
+      "source-layer": "Pavement",
+      "layout": {},
+      "paint": {
+        "fill-color": "#DDEFF3"
+      }
+    },
+    {
+      "type": "line",
+      "id": "Special area of interest line",
+      "minzoom": 17,
+      "source": "esri",
+      "source-layer": "Special area of interest line",
+      "layout": {
+        "line-cap": "round",
+        "visibility": "none",
+        "line-join": "round"
+      },
+      "paint": {
+        "line-color": "#DDEFF3",
+        "line-width": {
+          "base": 1.2,
+          "stops": [
+            [
+              14,
+              0.666667
+            ],
+            [
+              17,
+              0.666667
+            ]
+          ]
+        }
+      }
+    },
+    {
+      "type": "fill",
+      "id": "Building",
+      "minzoom": 15,
+      "source": "esri",
+      "source-layer": "Building",
+      "layout": {},
+      "paint": {
+        "fill-color": "#D3E0EB",
+        "fill-outline-color": "#DDEFF3"
+      }
+    },
+    {
+      "type": "fill",
+      "id": "Marine area/1",
+      "minzoom": 0,
+      "source": "esri",
+      "source-layer": "Marine area",
+      "layout": {},
+      "paint": {
+        "fill-color": "#acd3ff"
+      }
+    },
+    {
+      "type": "line",
+      "id": "Boundary line/Disputed admin5",
+      "filter": [
+        "==",
+        "_symbol",
+        13
+      ],
+      "minzoom": 16,
+      "source": "esri",
+      "source-layer": "Boundary line",
+      "layout": {
+        "line-join": "round"
+      },
+      "paint": {
+        "line-dasharray": [
+          3,
+          2
+        ],
+        "line-color": "#c8c8c8",
+        "line-width": {
+          "base": 1.2,
+          "stops": [
+            [
+              14,
+              1.6
+            ],
+            [
+              17,
+              1.6
+            ]
+          ]
+        }
+      }
+    },
+    {
+      "type": "line",
+      "id": "Boundary line/Disputed admin4",
+      "filter": [
+        "==",
+        "_symbol",
+        12
+      ],
+      "minzoom": 16,
+      "source": "esri",
+      "source-layer": "Boundary line",
+      "layout": {
+        "line-join": "round"
+      },
+      "paint": {
+        "line-dasharray": [
+          3,
+          2
+        ],
+        "line-color": "#c8c8c8",
+        "line-width": {
+          "base": 1.2,
+          "stops": [
+            [
+              14,
+              1.6
+            ],
+            [
+              17,
+              1.6
+            ]
+          ]
+        }
+      }
+    },
+    {
+      "type": "line",
+      "id": "Boundary line/Disputed admin3",
+      "filter": [
+        "==",
+        "_symbol",
+        11
+      ],
+      "minzoom": 16,
+      "source": "esri",
+      "source-layer": "Boundary line",
+      "layout": {
+        "line-join": "round"
+      },
+      "paint": {
+        "line-dasharray": [
+          4,
+          2
+        ],
+        "line-color": "#c8c8c8",
+        "line-width": {
+          "base": 1.2,
+          "stops": [
+            [
+              14,
+              1.6
+            ],
+            [
+              17,
+              1.6
+            ]
+          ]
+        }
+      }
+    },
+    {
+      "type": "line",
+      "id": "Boundary line/Disputed admin2",
+      "filter": [
+        "==",
+        "_symbol",
+        10
+      ],
+      "minzoom": 10,
+      "source": "esri",
+      "source-layer": "Boundary line",
+      "layout": {
+        "line-join": "round"
+      },
+      "paint": {
+        "line-dasharray": [
+          4,
+          2
+        ],
+        "line-color": "#c8c8c8",
+        "line-width": {
+          "base": 1.2,
+          "stops": [
+            [
+              10,
+              1.33333
+            ],
+            [
+              14,
+              1.6
+            ],
+            [
+              17,
+              1.6
+            ]
+          ]
+        }
+      }
+    },
+    {
+      "type": "line",
+      "id": "Boundary line/Disputed admin1",
+      "filter": [
+        "==",
+        "_symbol",
+        9
+      ],
+      "minzoom": 4,
+      "source": "esri",
+      "source-layer": "Boundary line",
+      "layout": {
+        "line-join": "round"
+      },
+      "paint": {
+        "line-dasharray": [
+          4,
+          2
+        ],
+        "line-color": "#c8c8c8",
+        "line-width": {
+          "base": 1.2,
+          "stops": [
+            [
+              4,
+              1.33333
+            ],
+            [
+              14,
+              1.6
+            ],
+            [
+              17,
+              1.6
+            ]
+          ]
+        }
+      }
+    },
+    {
+      "type": "line",
+      "id": "Boundary line/Disputed admin0",
+      "filter": [
+        "!in",
+        "DisputeID",
+        80,
+        0
+      ],
+      "minzoom": 1,
+      "source": "esri",
+      "source-layer": "Boundary line",
+      "layout": {
+        "line-join": "round"
+      },
+      "paint": {
+        "line-dasharray": [
+          6,
+          2
+        ],
+        "line-color": "#c8c8c8",
+        "line-width": {
+          "base": 1.2,
+          "stops": [
+            [
+              1,
+              1.33333
+            ],
+            [
+              14,
+              1.6
+            ],
+            [
+              17,
+              1.6
+            ]
+          ]
+        }
+      }
+    },
+    {
+      "type": "line",
+      "id": "Boundary line/Admin5",
+      "filter": [
+        "==",
+        "_symbol",
+        5
+      ],
+      "minzoom": 16,
+      "source": "esri",
+      "source-layer": "Boundary line",
+      "layout": {
+        "line-cap": "round",
+        "line-join": "round"
+      },
+      "paint": {
+        "line-dasharray": [
+          4,
+          2
+        ],
+        "line-color": "#9C9C9C",
+        "line-width": {
+          "base": 1.2,
+          "stops": [
+            [
+              14,
+              1.33333
+            ],
+            [
+              17,
+              1.33333
+            ]
+          ]
+        }
+      }
+    },
+    {
+      "type": "line",
+      "id": "Boundary line/Admin4",
+      "filter": [
+        "==",
+        "_symbol",
+        4
+      ],
+      "minzoom": 16,
+      "source": "esri",
+      "source-layer": "Boundary line",
+      "layout": {
+        "line-cap": "round",
+        "line-join": "round"
+      },
+      "paint": {
+        "line-dasharray": [
+          4,
+          2
+        ],
+        "line-color": "#9C9C9C",
+        "line-width": {
+          "base": 1.2,
+          "stops": [
+            [
+              14,
+              1.33333
+            ],
+            [
+              17,
+              1.33333
+            ]
+          ]
+        }
+      }
+    },
+    {
+      "type": "line",
+      "id": "Boundary line/Admin3",
+      "filter": [
+        "==",
+        "_symbol",
+        3
+      ],
+      "minzoom": 16,
+      "source": "esri",
+      "source-layer": "Boundary line",
+      "layout": {
+        "line-cap": "round",
+        "line-join": "round"
+      },
+      "paint": {
+        "line-dasharray": [
+          4,
+          2
+        ],
+        "line-color": "#9C9C9C",
+        "line-width": {
+          "base": 1.2,
+          "stops": [
+            [
+              14,
+              1.33333
+            ],
+            [
+              17,
+              1.33333
+            ]
+          ]
+        }
+      }
+    },
+    {
+      "type": "line",
+      "id": "Boundary line/Admin2/1",
+      "filter": [
+        "==",
+        "_symbol",
+        2
+      ],
+      "minzoom": 8,
+      "source": "esri",
+      "source-layer": "Boundary line",
+      "layout": {
+        "line-cap": "round",
+        "line-join": "round"
+      },
+      "paint": {
+        "line-color": "#DAE8E8",
+        "line-width": {
+          "base": 1.2,
+          "stops": [
+            [
+              8,
+              1.3333
+            ],
+            [
+              14,
+              2.66667
+            ],
+            [
+              17,
+              2.66667
+            ]
+          ]
+        }
+      }
+    },
+    {
+      "type": "line",
+      "id": "Boundary line/Admin1/1",
+      "filter": [
+        "==",
+        "_symbol",
+        1
+      ],
+      "minzoom": 6,
+      "source": "esri",
+      "source-layer": "Boundary line",
+      "layout": {
+        "line-cap": "round",
+        "line-join": "round"
+      },
+      "paint": {
+        "line-color": "#dbdbdb",
+        "line-width": {
+          "base": 1,
+          "stops": [
+            [
+              6,
+              1.2
+            ],
+            [
+              9,
+              2.5
+            ],
+            [
+              14,
+              7
+            ],
+            [
+              17,
+              7
+            ]
+          ]
+        }
+      }
+    },
+    {
+      "type": "line",
+      "id": "Boundary line/Admin0/1",
+      "filter": [
+        "==",
+        "_symbol",
+        0
+      ],
+      "minzoom": 1,
+      "source": "esri",
+      "source-layer": "Boundary line",
+      "layout": {
+        "line-cap": "round",
+        "line-join": "round"
+      },
+      "paint": {
+        "line-color": "#d4d4d4",
+        "line-width": {
+          "base": 1.2,
+          "stops": [
+            [
+              1,
+              1.2
+            ],
+            [
+              8,
+              4.33333
+            ],
+            [
+              14,
+              9.33333
+            ],
+            [
+              17,
+              9.33333
+            ]
+          ]
+        }
+      }
+    },
+    {
+      "type": "line",
+      "id": "Boundary line/Admin2/0",
+      "filter": [
+        "==",
+        "_symbol",
+        2
+      ],
+      "minzoom": 8,
+      "source": "esri",
+      "source-layer": "Boundary line",
+      "layout": {
+        "line-join": "round"
+      },
+      "paint": {
+        "line-dasharray": [
+          5,
+          3
+        ],
+        "line-color": "#b9b9b9",
+        "line-width": {
+          "base": 1.2,
+          "stops": [
+            [
+              8,
+              0.5
+            ],
+            [
+              14,
+              1.33333
+            ],
+            [
+              17,
+              1.33333
+            ]
+          ]
+        }
+      }
+    },
+    {
+      "type": "line",
+      "id": "Boundary line/Admin1/0",
+      "filter": [
+        "==",
+        "_symbol",
+        1
+      ],
+      "minzoom": 8,
+      "source": "esri",
+      "source-layer": "Boundary line",
+      "layout": {
+        "line-cap": "round",
+        "line-join": "round"
+      },
+      "paint": {
+        "line-dasharray": [
+          8,
+          6
+        ],
+        "line-color": "#b9b9b9",
+        "line-width": {
+          "base": 1,
+          "stops": [
+            [
+              4,
+              0.5
+            ],
+            [
+              14,
+              1.33333
+            ],
+            [
+              17,
+              1.33333
+            ]
+          ]
+        }
+      }
+    },
+    {
+      "type": "line",
+      "id": "Boundary line/Admin0/0",
+      "filter": [
+        "==",
+        "_symbol",
+        0
+      ],
+      "minzoom": 8,
+      "source": "esri",
+      "source-layer": "Boundary line",
+      "layout": {
+        "line-cap": "round",
+        "line-join": "round"
+      },
+      "paint": {
+        "line-dasharray": [
+          12,
+          4
+        ],
+        "line-color": "#aaaaaa",
+        "line-width": {
+          "base": 1.2,
+          "stops": [
+            [
+              1,
+              1.33333
+            ],
+            [
+              14,
+              1.33333
+            ],
+            [
+              17,
+              1.33333
+            ]
+          ]
+        }
+      }
+    },
+    {
+      "type": "line",
+      "id": "Railroad/2",
+      "minzoom": 13,
+      "source": "esri",
+      "source-layer": "Railroad",
+      "layout": {
+        "line-join": "round"
+      },
+      "paint": {
+        "line-color": "#efefef",
+        "line-width": {
+          "base": 1.2,
+          "stops": [
+            [
+              11,
+              3.33333
+            ],
+            [
+              14,
+              3.33333
+            ],
+            [
+              17,
+              3.33333
+            ]
+          ]
+        }
+      }
+    },
+    {
+      "type": "line",
+      "id": "Railroad/1",
+      "minzoom": 13,
+      "source": "esri",
+      "source-layer": "Railroad",
+      "layout": {
+        "line-join": "round"
+      },
+      "paint": {
+        "line-color": "#D4D4D4",
+        "line-width": {
+          "base": 1.2,
+          "stops": [
+            [
+              11,
+              1.33333
+            ],
+            [
+              14,
+              1.33333
+            ],
+            [
+              17,
+              1.33333
+            ]
+          ]
+        }
+      }
+    },
+    {
+      "type": "symbol",
+      "id": "Railroad/0",
+      "minzoom": 13,
+      "source": "esri",
+      "source-layer": "Railroad",
+      "layout": {
+        "icon-padding": 1,
+        "symbol-avoid-edges": true,
+        "symbol-placement": "line",
+        "icon-image": "Railroad/0",
+        "icon-allow-overlap": true
+      },
+      "paint": {}
+    },
+    {
+      "type": "line",
+      "id": "Trail or path",
+      "minzoom": 15,
+      "source": "esri",
+      "source-layer": "Trail or path",
+      "layout": {
+        "line-cap": "round",
+        "line-join": "round"
+      },
+      "paint": {
+        "line-color": "#ffffff",
+        "line-width": {
+          "base": 1.2,
+          "stops": [
+            [
+              14,
+              1.6
+            ],
+            [
+              17,
+              1.6
+            ]
+          ]
+        }
+      }
+    },
+    {
+      "type": "line",
+      "id": "Ferry/Ferry",
+      "filter": [
+        "==",
+        "_symbol",
+        0
+      ],
+      "minzoom": 11,
+      "source": "esri",
+      "source-layer": "Ferry",
+      "layout": {
+        "visibility": "none",
+        "line-join": "round"
+      },
+      "paint": {
+        "line-dasharray": [
+          6.06061,
+          3.63636
+        ],
+        "line-color": "#acd3ff",
+        "line-width": {
+          "base": 1.2,
+          "stops": [
+            [
+              11,
+              1.33333
+            ],
+            [
+              14,
+              1.46667
+            ],
+            [
+              17,
+              1.46667
+            ]
+          ]
+        }
+      }
+    },
+    {
+      "type": "line",
+      "id": "Ferry/Rail ferry/2",
+      "filter": [
+        "==",
+        "_symbol",
+        1
+      ],
+      "minzoom": 11,
+      "source": "esri",
+      "source-layer": "Ferry",
+      "layout": {
+        "visibility": "none",
+        "line-join": "round"
+      },
+      "paint": {
+        "line-color": "#acd3ff",
+        "line-width": {
+          "base": 1.2,
+          "stops": [
+            [
+              11,
+              3.33333
+            ],
+            [
+              14,
+              4
+            ],
+            [
+              17,
+              4
+            ]
+          ]
+        }
+      }
+    },
+    {
+      "type": "line",
+      "id": "Ferry/Rail ferry/1",
+      "filter": [
+        "==",
+        "_symbol",
+        1
+      ],
+      "minzoom": 11,
+      "source": "esri",
+      "source-layer": "Ferry",
+      "layout": {
+        "visibility": "none",
+        "line-join": "round"
+      },
+      "paint": {
+        "line-color": "#acd3ff",
+        "line-width": {
+          "base": 1.2,
+          "stops": [
+            [
+              11,
+              1.33333
+            ],
+            [
+              14,
+              1.33333
+            ],
+            [
+              17,
+              1.33333
+            ]
+          ]
+        }
+      }
+    },
+    {
+      "type": "symbol",
+      "id": "Ferry/Rail ferry/0",
+      "filter": [
+        "==",
+        "_symbol",
+        1
+      ],
+      "minzoom": 11,
+      "source": "esri",
+      "source-layer": "Ferry",
+      "layout": {
+        "icon-padding": 1,
+        "visibility": "none",
+        "symbol-avoid-edges": true,
+        "symbol-placement": "line",
+        "icon-image": "Ferry/Rail ferry/0",
+        "icon-allow-overlap": true
+      },
+      "paint": {}
+    },
+    {
+      "type": "line",
+      "id": "Road/Local/1",
+      "filter": [
+        "==",
+        "_symbol",
+        6
+      ],
+      "minzoom": 14,
+      "source": "esri",
+      "source-layer": "Road",
+      "layout": {
+        "line-join": "round"
+      },
+      "paint": {
+        "line-color": "#dcdcdc",
+        "line-width": {
+          "base": 1.2,
+          "stops": [
+            [
+              11,
+              1.5
+            ],
+            [
+              14,
+              4.66667
+            ],
+            [
+              17,
+              8.66667
+            ]
+          ]
+        }
+      }
+    },
+    {
+      "type": "line",
+      "id": "Road/Local, in urban area/1",
+      "filter": [
+        "==",
+        "_symbol",
+        7
+      ],
+      "minzoom": 14,
+      "source": "esri",
+      "source-layer": "Road",
+      "layout": {
+        "line-join": "round"
+      },
+      "paint": {
+        "line-color": "#dcdcdc",
+        "line-width": {
+          "base": 1.2,
+          "stops": [
+            [
+              11,
+              1.5
+            ],
+            [
+              14,
+              4.66667
+            ],
+            [
+              17,
+              8.66667
+            ]
+          ]
+        }
+      }
+    },
+    {
+      "type": "line",
+      "id": "Road/Service/1",
+      "filter": [
+        "==",
+        "_symbol",
+        8
+      ],
+      "minzoom": 14,
+      "source": "esri",
+      "source-layer": "Road",
+      "layout": {
+        "line-join": "round"
+      },
+      "paint": {
+        "line-color": "#dcdcdc",
+        "line-width": {
+          "base": 1.2,
+          "stops": [
+            [
+              11,
+              1.5
+            ],
+            [
+              14,
+              3.33333
+            ],
+            [
+              17,
+              4.33333
+            ]
+          ]
+        }
+      }
+    },
+    {
+      "type": "line",
+      "id": "Road/4WD/0",
+      "filter": [
+        "==",
+        "_symbol",
+        10
+      ],
+      "minzoom": 12,
+      "source": "esri",
+      "source-layer": "Road",
+      "layout": {
+        "line-join": "round"
+      },
+      "paint": {
+        "line-color": "#ffffff",
+        "line-width": {
+          "base": 1.2,
+          "stops": [
+            [
+              11,
+              1
+            ],
+            [
+              14,
+              1
+            ],
+            [
+              17,
+              2
+            ]
+          ]
+        }
+      }
+    },
+    {
+      "type": "line",
+      "id": "Road/Local/0",
+      "filter": [
+        "==",
+        "_symbol",
+        6
+      ],
+      "minzoom": 12,
+      "source": "esri",
+      "source-layer": "Road",
+      "layout": {
+        "line-join": "round"
+      },
+      "paint": {
+        "line-color": "#ffffff",
+        "line-width": {
+          "base": 1.2,
+          "stops": [
+            [
+              11,
+              0.75
+            ],
+            [
+              14,
+              2.66667
+            ],
+            [
+              17,
+              4.66667
+            ]
+          ]
+        }
+      }
+    },
+    {
+      "type": "line",
+      "id": "Road/Local, in urban area/0",
+      "filter": [
+        "==",
+        "_symbol",
+        7
+      ],
+      "minzoom": 12,
+      "source": "esri",
+      "source-layer": "Road",
+      "layout": {
+        "line-join": "round"
+      },
+      "paint": {
+        "line-color": "#ffffff",
+        "line-width": {
+          "base": 1.2,
+          "stops": [
+            [
+              11,
+              0.75
+            ],
+            [
+              14,
+              2.66667
+            ],
+            [
+              17,
+              4.66667
+            ]
+          ]
+        }
+      }
+    },
+    {
+      "type": "line",
+      "id": "Road/Service/0",
+      "filter": [
+        "==",
+        "_symbol",
+        8
+      ],
+      "minzoom": 12,
+      "source": "esri",
+      "source-layer": "Road",
+      "layout": {
+        "line-join": "round"
+      },
+      "paint": {
+        "line-color": "#FDFDFD",
+        "line-width": {
+          "base": 1.2,
+          "stops": [
+            [
+              11,
+              0.75
+            ],
+            [
+              14,
+              1.33333
+            ],
+            [
+              17,
+              2.33333
+            ]
+          ]
+        }
+      }
+    },
+    {
+      "type": "line",
+      "id": "Road/Pedestrian",
+      "filter": [
+        "==",
+        "_symbol",
+        9
+      ],
+      "minzoom": 15,
+      "source": "esri",
+      "source-layer": "Road",
+      "layout": {
+        "line-cap": "round",
+        "line-join": "round"
+      },
+      "paint": {
+        "line-color": "#ffffff",
+        "line-width": {
+          "base": 1.2,
+          "stops": [
+            [
+              14,
+              1.6
+            ],
+            [
+              17,
+              2.6
+            ]
+          ]
+        }
+      }
+    },
+    {
+      "type": "line",
+      "id": "Road/4WD/1",
+      "filter": [
+        "==",
+        "_symbol",
+        10
+      ],
+      "minzoom": 14,
+      "source": "esri",
+      "source-layer": "Road",
+      "layout": {
+        "line-join": "round"
+      },
+      "paint": {
+        "line-color": "#F8F6D9",
+        "line-width": {
+          "base": 1.2,
+          "stops": [
+            [
+              11,
+              1.33333
+            ],
+            [
+              14,
+              2
+            ],
+            [
+              17,
+              4
+            ]
+          ]
+        }
+      }
+    },
+    {
+      "type": "line",
+      "id": "Road/Minor/1",
+      "filter": [
+        "==",
+        "_symbol",
+        4
+      ],
+      "minzoom": 13,
+      "source": "esri",
+      "source-layer": "Road",
+      "layout": {
+        "line-join": "round"
+      },
+      "paint": {
+        "line-color": "#cccccc",
+        "line-width": {
+          "base": 1.2,
+          "stops": [
+            [
+              13,
+              1.5
+            ],
+            [
+              14,
+              4.66667
+            ],
+            [
+              17,
+              8.66667
+            ]
+          ]
+        }
+      }
+    },
+    {
+      "type": "line",
+      "id": "Road/Minor, ramp or traffic circle/1",
+      "filter": [
+        "==",
+        "_symbol",
+        5
+      ],
+      "minzoom": 13,
+      "source": "esri",
+      "source-layer": "Road",
+      "layout": {
+        "line-join": "round"
+      },
+      "paint": {
+        "line-color": "#cccccc",
+        "line-width": {
+          "base": 1.2,
+          "stops": [
+            [
+              13,
+              1.5
+            ],
+            [
+              14,
+              4
+            ],
+            [
+              17,
+              8
+            ]
+          ]
+        }
+      }
+    },
+    {
+      "type": "line",
+      "id": "Road/Minor/0",
+      "filter": [
+        "==",
+        "_symbol",
+        4
+      ],
+      "minzoom": 11,
+      "source": "esri",
+      "source-layer": "Road",
+      "layout": {
+        "line-cap": "round",
+        "line-join": "round"
+      },
+      "paint": {
+        "line-color": "#FFFFFF",
+        "line-width": {
+          "base": 1.2,
+          "stops": [
+            [
+              11,
+              0.75
+            ],
+            [
+              14,
+              2.66667
+            ],
+            [
+              17,
+              4.66667
+            ]
+          ]
+        }
+      }
+    },
+    {
+      "type": "line",
+      "id": "Road/Minor, ramp or traffic circle/0",
+      "filter": [
+        "==",
+        "_symbol",
+        5
+      ],
+      "minzoom": 11,
+      "source": "esri",
+      "source-layer": "Road",
+      "layout": {
+        "line-cap": "round",
+        "line-join": "round"
+      },
+      "paint": {
+        "line-color": "#FFFFFF",
+        "line-width": {
+          "base": 1.2,
+          "stops": [
+            [
+              11,
+              0.75
+            ],
+            [
+              14,
+              2
+            ],
+            [
+              17,
+              4
+            ]
+          ]
+        }
+      }
+    },
+    {
+      "type": "line",
+      "id": "Road/Major/1",
+      "filter": [
+        "==",
+        "_symbol",
+        2
+      ],
+      "minzoom": 13,
+      "source": "esri",
+      "source-layer": "Road",
+      "layout": {
+        "line-join": "round"
+      },
+      "paint": {
+        "line-color": "#cccccc",
+        "line-width": {
+          "base": 1.2,
+          "stops": [
+            [
+              13,
+              1.5
+            ],
+            [
+              14,
+              7.33333
+            ],
+            [
+              17,
+              14.33333
+            ]
+          ]
+        }
+      }
+    },
+    {
+      "type": "line",
+      "id": "Road/Major, ramp or traffic circle/1",
+      "filter": [
+        "==",
+        "_symbol",
+        3
+      ],
+      "minzoom": 13,
+      "source": "esri",
+      "source-layer": "Road",
+      "layout": {
+        "line-join": "round"
+      },
+      "paint": {
+        "line-color": "#cccccc",
+        "line-width": {
+          "base": 1.2,
+          "stops": [
+            [
+              13,
+              1.5
+            ],
+            [
+              14,
+              4.66667
+            ],
+            [
+              17,
+              7.66667
+            ]
+          ]
+        }
+      }
+    },
+    {
+      "type": "line",
+      "id": "Road/Major/0",
+      "filter": [
+        "==",
+        "_symbol",
+        2
+      ],
+      "minzoom": 10,
+      "source": "esri",
+      "source-layer": "Road",
+      "layout": {
+        "line-cap": "round",
+        "line-join": "round"
+      },
+      "paint": {
+        "line-color": "#FFFFFF",
+        "line-width": {
+          "base": 1.2,
+          "stops": [
+            [
+              10,
+              0.75
+            ],
+            [
+              14,
+              5.33333
+            ],
+            [
+              17,
+              10.33333
+            ]
+          ]
+        }
+      }
+    },
+    {
+      "type": "line",
+      "id": "Road/Major, ramp or traffic circle/0",
+      "filter": [
+        "==",
+        "_symbol",
+        3
+      ],
+      "minzoom": 10,
+      "source": "esri",
+      "source-layer": "Road",
+      "layout": {
+        "line-cap": "round",
+        "line-join": "round"
+      },
+      "paint": {
+        "line-color": "#FFFFFF",
+        "line-width": {
+          "base": 1.2,
+          "stops": [
+            [
+              10,
+              0.75
+            ],
+            [
+              14,
+              2.66667
+            ],
+            [
+              17,
+              4.66667
+            ]
+          ]
+        }
+      }
+    },
+    {
+      "type": "line",
+      "id": "Road/Freeway Motorway/1",
+      "filter": [
+        "==",
+        "_symbol",
+        0
+      ],
+      "minzoom": 9,
+      "source": "esri",
+      "source-layer": "Road",
+      "layout": {
+        "line-join": "round"
+      },
+      "paint": {
+        "line-color": "#cccccc",
+        "line-width": {
+          "base": 1.2,
+          "stops": [
+            [
+              9,
+              1.2
+            ],
+            [
+              14,
+              7.33333
+            ],
+            [
+              17,
+              14.33333
+            ]
+          ]
+        }
+      }
+    },
+    {
+      "type": "line",
+      "id": "Road/Freeway Motorway, ramp or traffic circle/1",
+      "filter": [
+        "==",
+        "_symbol",
+        1
+      ],
+      "minzoom": 11,
+      "source": "esri",
+      "source-layer": "Road",
+      "layout": {
+        "line-join": "round"
+      },
+      "paint": {
+        "line-color": "#cccccc",
+        "line-width": {
+          "base": 1.2,
+          "stops": [
+            [
+              9,
+              1.5
+            ],
+            [
+              14,
+              4.66667
+            ],
+            [
+              17,
+              8.66667
+            ]
+          ]
+        }
+      }
+    },
+    {
+      "type": "line",
+      "id": "Road/Freeway Motorway/0",
+      "filter": [
+        "==",
+        "_symbol",
+        0
+      ],
+      "minzoom": 8,
+      "source": "esri",
+      "source-layer": "Road",
+      "layout": {
+        "line-cap": "round",
+        "line-join": "round"
+      },
+      "paint": {
+        "line-color": "#ffffff",
+        "line-width": {
+          "base": 1.2,
+          "stops": [
+            [
+              4,
+              0.75
+            ],
+            [
+              14,
+              5.33333
+            ],
+            [
+              17,
+              10.33333
+            ]
+          ]
+        }
+      }
+    },
+    {
+      "type": "line",
+      "id": "Road/Freeway Motorway, ramp or traffic circle/0",
+      "filter": [
+        "==",
+        "_symbol",
+        1
+      ],
+      "minzoom": 8,
+      "source": "esri",
+      "source-layer": "Road",
+      "layout": {
+        "line-cap": "round",
+        "line-join": "round"
+      },
+      "paint": {
+        "line-color": "#ffffff",
+        "line-width": {
+          "base": 1.2,
+          "stops": [
+            [
+              9,
+              0.75
+            ],
+            [
+              14,
+              2.66667
+            ],
+            [
+              17,
+              4.66667
+            ]
+          ]
+        }
+      }
+    },
+    {
+      "type": "line",
+      "id": "Road tunnel/Local/1",
+      "filter": [
+        "==",
+        "_symbol",
+        6
+      ],
+      "minzoom": 11,
+      "source": "esri",
+      "source-layer": "Road tunnel",
+      "layout": {
+        "line-join": "round"
+      },
+      "paint": {
+        "line-opacity": 0.5,
+        "line-width": {
+          "base": 1.2,
+          "stops": [
+            [
+              11,
+              3.33333
+            ],
+            [
+              14,
+              4.66667
+            ],
+            [
+              17,
+              4.66667
+            ]
+          ]
+        },
+        "line-color": "#cccccc"
+      }
+    },
+    {
+      "type": "line",
+      "id": "Road tunnel/Local, in urban area/1",
+      "filter": [
+        "==",
+        "_symbol",
+        7
+      ],
+      "minzoom": 12,
+      "source": "esri",
+      "source-layer": "Road tunnel",
+      "layout": {
+        "line-join": "round"
+      },
+      "paint": {
+        "line-opacity": 0.5,
+        "line-width": {
+          "base": 1.2,
+          "stops": [
+            [
+              11,
+              3.33333
+            ],
+            [
+              14,
+              4.66667
+            ],
+            [
+              17,
+              4.66667
+            ]
+          ]
+        },
+        "line-color": "#cccccc"
+      }
+    },
+    {
+      "type": "line",
+      "id": "Road tunnel/Service/1",
+      "filter": [
+        "==",
+        "_symbol",
+        8
+      ],
+      "minzoom": 13,
+      "source": "esri",
+      "source-layer": "Road tunnel",
+      "layout": {
+        "line-join": "round"
+      },
+      "paint": {
+        "line-opacity": 0.5,
+        "line-width": {
+          "base": 1.2,
+          "stops": [
+            [
+              11,
+              3.33333
+            ],
+            [
+              14,
+              3.33333
+            ],
+            [
+              17,
+              3.33333
+            ]
+          ]
+        },
+        "line-color": "#cccccc"
+      }
+    },
+    {
+      "type": "line",
+      "id": "Road tunnel/4WD/0",
+      "filter": [
+        "==",
+        "_symbol",
+        10
+      ],
+      "minzoom": 13,
+      "source": "esri",
+      "source-layer": "Road tunnel",
+      "layout": {
+        "line-join": "round"
+      },
+      "paint": {
+        "line-opacity": 0.5,
+        "line-width": {
+          "base": 1.2,
+          "stops": [
+            [
+              11,
+              1
+            ],
+            [
+              14,
+              1
+            ],
+            [
+              17,
+              1
+            ]
+          ]
+        },
+        "line-color": "#FFFFFF"
+      }
+    },
+    {
+      "type": "line",
+      "id": "Road tunnel/Local/0",
+      "filter": [
+        "==",
+        "_symbol",
+        6
+      ],
+      "minzoom": 11,
+      "source": "esri",
+      "source-layer": "Road tunnel",
+      "layout": {
+        "line-join": "round"
+      },
+      "paint": {
+        "line-opacity": 0.5,
+        "line-width": {
+          "base": 1.2,
+          "stops": [
+            [
+              11,
+              1.33333
+            ],
+            [
+              14,
+              2.66667
+            ],
+            [
+              17,
+              2.66667
+            ]
+          ]
+        },
+        "line-color": "#FFFFFF"
+      }
+    },
+    {
+      "type": "line",
+      "id": "Road tunnel/Local, in urban area/0",
+      "filter": [
+        "==",
+        "_symbol",
+        7
+      ],
+      "minzoom": 12,
+      "source": "esri",
+      "source-layer": "Road tunnel",
+      "layout": {
+        "line-join": "round"
+      },
+      "paint": {
+        "line-opacity": 0.5,
+        "line-width": {
+          "base": 1.2,
+          "stops": [
+            [
+              11,
+              1.33333
+            ],
+            [
+              14,
+              2.66667
+            ],
+            [
+              17,
+              2.66667
+            ]
+          ]
+        },
+        "line-color": "#FFFFFF"
+      }
+    },
+    {
+      "type": "line",
+      "id": "Road tunnel/Service/0",
+      "filter": [
+        "==",
+        "_symbol",
+        8
+      ],
+      "minzoom": 13,
+      "source": "esri",
+      "source-layer": "Road tunnel",
+      "layout": {
+        "line-join": "round"
+      },
+      "paint": {
+        "line-opacity": 0.5,
+        "line-width": {
+          "base": 1.2,
+          "stops": [
+            [
+              11,
+              1.33333
+            ],
+            [
+              14,
+              1.33333
+            ],
+            [
+              17,
+              1.33333
+            ]
+          ]
+        },
+        "line-color": "#FFFFFF"
+      }
+    },
+    {
+      "type": "line",
+      "id": "Road tunnel/Pedestrian",
+      "filter": [
+        "==",
+        "_symbol",
+        9
+      ],
+      "minzoom": 15,
+      "source": "esri",
+      "source-layer": "Road tunnel",
+      "layout": {
+        "line-cap": "round",
+        "line-join": "round"
+      },
+      "paint": {
+        "line-opacity": 0.5,
+        "line-width": {
+          "base": 1.2,
+          "stops": [
+            [
+              14,
+              1.6
+            ],
+            [
+              17,
+              1.6
+            ]
+          ]
+        },
+        "line-color": "#cccccc"
+      }
+    },
+    {
+      "type": "line",
+      "id": "Road tunnel/4WD/1",
+      "filter": [
+        "==",
+        "_symbol",
+        10
+      ],
+      "minzoom": 13,
+      "source": "esri",
+      "source-layer": "Road tunnel",
+      "layout": {
+        "line-join": "round"
+      },
+      "paint": {
+        "line-opacity": 0.5,
+        "line-width": {
+          "base": 1.2,
+          "stops": [
+            [
+              11,
+              2
+            ],
+            [
+              14,
+              2
+            ],
+            [
+              17,
+              2
+            ]
+          ]
+        },
+        "line-color": "#cccccc"
+      }
+    },
+    {
+      "type": "line",
+      "id": "Road tunnel/Minor/1",
+      "filter": [
+        "==",
+        "_symbol",
+        4
+      ],
+      "minzoom": 9,
+      "source": "esri",
+      "source-layer": "Road tunnel",
+      "layout": {
+        "line-join": "round"
+      },
+      "paint": {
+        "line-opacity": 0.5,
+        "line-width": {
+          "base": 1.2,
+          "stops": [
+            [
+              9,
+              3.33333
+            ],
+            [
+              14,
+              4.66667
+            ],
+            [
+              17,
+              4.66667
+            ]
+          ]
+        },
+        "line-color": "#cccccc"
+      }
+    },
+    {
+      "type": "line",
+      "id": "Road tunnel/Minor, ramp or traffic circle/1",
+      "filter": [
+        "==",
+        "_symbol",
+        5
+      ],
+      "minzoom": 9,
+      "source": "esri",
+      "source-layer": "Road tunnel",
+      "layout": {
+        "line-join": "round"
+      },
+      "paint": {
+        "line-opacity": 0.5,
+        "line-width": {
+          "base": 1.2,
+          "stops": [
+            [
+              9,
+              3.33333
+            ],
+            [
+              14,
+              4
+            ],
+            [
+              17,
+              4
+            ]
+          ]
+        },
+        "line-color": "#cccccc"
+      }
+    },
+    {
+      "type": "line",
+      "id": "Road tunnel/Minor/0",
+      "filter": [
+        "==",
+        "_symbol",
+        4
+      ],
+      "minzoom": 9,
+      "source": "esri",
+      "source-layer": "Road tunnel",
+      "layout": {
+        "line-cap": "round",
+        "line-join": "round"
+      },
+      "paint": {
+        "line-opacity": 0.5,
+        "line-width": {
+          "base": 1.2,
+          "stops": [
+            [
+              9,
+              1.33333
+            ],
+            [
+              14,
+              2.66667
+            ],
+            [
+              17,
+              2.66667
+            ]
+          ]
+        },
+        "line-color": "#FFFFFF"
+      }
+    },
+    {
+      "type": "line",
+      "id": "Road tunnel/Minor, ramp or traffic circle/0",
+      "filter": [
+        "==",
+        "_symbol",
+        5
+      ],
+      "minzoom": 9,
+      "source": "esri",
+      "source-layer": "Road tunnel",
+      "layout": {
+        "line-cap": "round",
+        "line-join": "round"
+      },
+      "paint": {
+        "line-opacity": 0.5,
+        "line-width": {
+          "base": 1.2,
+          "stops": [
+            [
+              9,
+              1.33333
+            ],
+            [
+              14,
+              2
+            ],
+            [
+              17,
+              2
+            ]
+          ]
+        },
+        "line-color": "#FFFFFF"
+      }
+    },
+    {
+      "type": "line",
+      "id": "Road tunnel/Major/1",
+      "filter": [
+        "==",
+        "_symbol",
+        2
+      ],
+      "minzoom": 9,
+      "source": "esri",
+      "source-layer": "Road tunnel",
+      "layout": {
+        "line-join": "round"
+      },
+      "paint": {
+        "line-opacity": 0.5,
+        "line-width": {
+          "base": 1.2,
+          "stops": [
+            [
+              8,
+              3.33333
+            ],
+            [
+              14,
+              7.33333
+            ],
+            [
+              17,
+              7.33333
+            ]
+          ]
+        },
+        "line-color": "#cccccc"
+      }
+    },
+    {
+      "type": "line",
+      "id": "Road tunnel/Major, ramp or traffic circle/1",
+      "filter": [
+        "==",
+        "_symbol",
+        3
+      ],
+      "minzoom": 9,
+      "source": "esri",
+      "source-layer": "Road tunnel",
+      "layout": {
+        "line-join": "round"
+      },
+      "paint": {
+        "line-opacity": 0.5,
+        "line-width": {
+          "base": 1.2,
+          "stops": [
+            [
+              9,
+              3.33333
+            ],
+            [
+              14,
+              4.66667
+            ],
+            [
+              17,
+              4.66667
+            ]
+          ]
+        },
+        "line-color": "#cccccc"
+      }
+    },
+    {
+      "type": "line",
+      "id": "Road tunnel/Major/0",
+      "filter": [
+        "==",
+        "_symbol",
+        2
+      ],
+      "minzoom": 9,
+      "source": "esri",
+      "source-layer": "Road tunnel",
+      "layout": {
+        "line-cap": "round",
+        "line-join": "round"
+      },
+      "paint": {
+        "line-opacity": 0.5,
+        "line-width": {
+          "base": 1.2,
+          "stops": [
+            [
+              8,
+              1.33333
+            ],
+            [
+              14,
+              5.33333
+            ],
+            [
+              17,
+              5.33333
+            ]
+          ]
+        },
+        "line-color": "#FFFFFF"
+      }
+    },
+    {
+      "type": "line",
+      "id": "Road tunnel/Major, ramp or traffic circle/0",
+      "filter": [
+        "==",
+        "_symbol",
+        3
+      ],
+      "minzoom": 9,
+      "source": "esri",
+      "source-layer": "Road tunnel",
+      "layout": {
+        "line-cap": "round",
+        "line-join": "round"
+      },
+      "paint": {
+        "line-opacity": 0.5,
+        "line-width": {
+          "base": 1.2,
+          "stops": [
+            [
+              9,
+              1.33333
+            ],
+            [
+              14,
+              2.66667
+            ],
+            [
+              17,
+              2.66667
+            ]
+          ]
+        },
+        "line-color": "#FFFFFF"
+      }
+    },
+    {
+      "type": "line",
+      "id": "Road tunnel/Freeway Motorway/1",
+      "filter": [
+        "==",
+        "_symbol",
+        0
+      ],
+      "minzoom": 9,
+      "source": "esri",
+      "source-layer": "Road tunnel",
+      "layout": {
+        "line-join": "round"
+      },
+      "paint": {
+        "line-opacity": 0.5,
+        "line-width": {
+          "base": 1.2,
+          "stops": [
+            [
+              4,
+              3.33333
+            ],
+            [
+              14,
+              7.33333
+            ],
+            [
+              17,
+              7.33333
+            ]
+          ]
+        },
+        "line-color": "#cccccc"
+      }
+    },
+    {
+      "type": "line",
+      "id": "Road tunnel/Freeway Motorway, ramp or traffic circle/1",
+      "filter": [
+        "==",
+        "_symbol",
+        1
+      ],
+      "minzoom": 9,
+      "source": "esri",
+      "source-layer": "Road tunnel",
+      "layout": {
+        "line-join": "round"
+      },
+      "paint": {
+        "line-opacity": 0.5,
+        "line-width": {
+          "base": 1.2,
+          "stops": [
+            [
+              9,
+              3.33333
+            ],
+            [
+              14,
+              4.66667
+            ],
+            [
+              17,
+              4.66667
+            ]
+          ]
+        },
+        "line-color": "#cccccc"
+      }
+    },
+    {
+      "type": "line",
+      "id": "Road tunnel/Freeway Motorway/0",
+      "filter": [
+        "==",
+        "_symbol",
+        0
+      ],
+      "minzoom": 9,
+      "source": "esri",
+      "source-layer": "Road tunnel",
+      "layout": {
+        "line-cap": "round",
+        "line-join": "round"
+      },
+      "paint": {
+        "line-opacity": 0.5,
+        "line-width": {
+          "base": 1.2,
+          "stops": [
+            [
+              4,
+              1.33333
+            ],
+            [
+              14,
+              5.33333
+            ],
+            [
+              17,
+              5.33333
+            ]
+          ]
+        },
+        "line-color": "#FFFFFF"
+      }
+    },
+    {
+      "type": "line",
+      "id": "Road tunnel/Freeway Motorway, ramp or traffic circle/0",
+      "filter": [
+        "==",
+        "_symbol",
+        1
+      ],
+      "minzoom": 9,
+      "source": "esri",
+      "source-layer": "Road tunnel",
+      "layout": {
+        "line-cap": "round",
+        "line-join": "round"
+      },
+      "paint": {
+        "line-opacity": 0.5,
+        "line-width": {
+          "base": 1.2,
+          "stops": [
+            [
+              9,
+              1.33333
+            ],
+            [
+              14,
+              2.66667
+            ],
+            [
+              17,
+              2.66667
+            ]
+          ]
+        },
+        "line-color": "#FFFFFF"
+      }
+    },
+    {
+      "type": "symbol",
+      "id": "Point of interest/Bus station",
+      "filter": [
+        "==",
+        "_symbol",
+        2
+      ],
+      "minzoom": 16,
+      "source": "esri",
+      "source-layer": "Point of interest",
+      "layout": {
+        "icon-padding": 1,
+        "visibility": "none",
+        "text-max-width": 8,
+        "text-allow-overlap": false,
+        "icon-image": "Point of interest/Bus station",
+        "text-anchor": "bottom-left",
+        "text-size": 10.666667,
+        "text-letter-spacing": 0.04,
+        "text-padding": 1,
+        "text-font": [
+          "Arial Regular"
+        ],
+        "symbol-avoid-edges": true,
+        "text-field": "{_name_global}"
+      },
+      "paint": {
+        "text-color": "#595959",
+        "text-halo-color": "#F2ECD4",
+        "text-halo-width": 0.933333
+      }
+    },
+    {
+      "type": "symbol",
+      "id": "Point of interest/Rail station",
+      "filter": [
+        "==",
+        "_symbol",
+        3
+      ],
+      "minzoom": 16,
+      "source": "esri",
+      "source-layer": "Point of interest",
+      "layout": {
+        "icon-padding": 1,
+        "visibility": "none",
+        "text-max-width": 8,
+        "text-allow-overlap": false,
+        "icon-image": "Point of interest/Rail station",
+        "text-anchor": "bottom-left",
+        "text-size": 10.666667,
+        "text-letter-spacing": 0.04,
+        "text-padding": 1,
+        "text-font": [
+          "Arial Regular"
+        ],
+        "symbol-avoid-edges": true,
+        "text-field": "{_name_global}"
+      },
+      "paint": {
+        "text-color": "#595959",
+        "text-halo-color": "#F2ECD4",
+        "text-halo-width": 0.933333
+      }
+    },
+    {
+      "type": "symbol",
+      "id": "City large scale",
+      "minzoom": 10,
+      "source": "esri",
+      "source-layer": "City large scale",
+      "layout": {
+        "icon-padding": 1,
+        "visibility": "none",
+        "symbol-avoid-edges": true,
+        "icon-image": "City large scale"
+      },
+      "paint": {}
+    },
+    {
+      "type": "symbol",
+      "id": "Continent",
+      "maxzoom": 3,
+      "source": "esri",
+      "source-layer": "Continent",
+      "layout": {
+        "icon-padding": 1,
+        "symbol-avoid-edges": true,
+        "icon-image": "Continent"
+      },
+      "paint": {}
+    }
+  ],
+  "version": 8,
+  "sources": {
+    "esri": {
+      "type": "vector",
+      "url": "http://basemaps.arcgis.com/arcgis/rest/services/World_Basemap/VectorTileServer"
+    }
+  }
+}

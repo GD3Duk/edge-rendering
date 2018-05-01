@@ -16,9 +16,11 @@ export default class Menu extends React.Component<MenuProps, any> {
 
   render() {
     return (
-      <div className={ "intro " + (this.props.webscene ? "low" : "") }>
-        <div className="description">
-          <h1 className="title">Edge rendering</h1>
+      <div className={ "intro" + (this.props.webscene ? " below" : "") }>
+
+        <div className= { "description" + (this.props.webscene ? " below" : "")}>
+          <h1 className="title" onClick = {(event: any) => this.props.handleSceneChange(null)}>Edge rendering</h1>
+          {!this.props.webscene &&
           <p>For city visualizations:
             <span className="urban"
               onClick = {(event: any) => this.props.handleSceneChange("urban")}
@@ -33,11 +35,13 @@ export default class Menu extends React.Component<MenuProps, any> {
               onClick = {(event: any) => this.props.handleSceneChange("old")}
             > Old scene of Lyon</span>.
           </p>
-          <p className="info"> using <a href="https://developers.arcgis.com/javascript/" target="_blank">ArcGIS API for JS </a>
+          }
+          <p className="info"> App created using <a href="https://developers.arcgis.com/javascript/" target="_blank">ArcGIS API for JS </a>
           and data from awesome contributors to <a href="https://livingatlas.arcgis.com/en/" target="_blank">The Living Atlas</a>.
-          Fork me on <a href="https://github.com/RalucaNicola/edge-rendering" target="_blank">Github</a>!</p>
+          Fork me on <a href="https://github.com/RalucaNicola/edge-rendering" target="_blank">Github</a> and add your own styles!</p>
         </div>
-        <div className="menu">
+
+        <div className={"menu" + (this.props.webscene ? " inline" : "")}>
           <div className="menu-item">
             <img className="urban" src={urban} alt="urban cartography"
               onClick = {(event: any) => this.props.handleSceneChange("urban")}

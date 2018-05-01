@@ -2,7 +2,6 @@
 
 .intro {
   position: absolute;
-  top: 0;
   left: 0;
   right: 0;
   bottom: 0;
@@ -13,11 +12,12 @@
   height: 100%;
   padding: 0;
   margin: 0;
+  height: 100%;
+  transition: height 1s linear;
 }
 
-.intro.low {
-  transition: height 1s linear;
-  top: unset;
+.intro.below {
+  bottom: 0;
   height: 150px;
 }
 
@@ -29,6 +29,7 @@
 
 .title {
   font-family: $titleFont;
+  cursor: pointer;
 }
 
 .menu {
@@ -38,9 +39,15 @@
   max-width: 500px;
 }
 
+.menu.inline {
+  max-width: unset;
+  flex-wrap: nowrap;
+  padding-right: 10px;
+}
+
 .menu-item {
   width: 40%;
-  padding: 1em;
+  padding: 0.4em;
 }
 
 .menu-item img {
@@ -112,5 +119,9 @@ img.old:hover {
 @media screen and (orientation: portrait) {
   .menu-item {
     width: 80%;
+  }
+
+  .description.below {
+    display: none;
   }
 }

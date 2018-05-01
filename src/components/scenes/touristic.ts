@@ -10,12 +10,14 @@ import SimpleRenderer = require("esri/renderers/SimpleRenderer");
 import MeshSymbol3D = require("esri/symbols/MeshSymbol3D");
 import FillSymbol3DLayer = require("esri/symbols/FillSymbol3DLayer");
 import SketchEdges3D = require("esri/symbols/edges/SketchEdges3D");
+import * as parisStyle from '../../basemap-styles/paris.json';
 
-var basemap = new VectorTileLayer({
-  portalItem: {
-   id: "ce713892be9841ce95f7c015bfc00896"
- }
+
+// original style from http://www.arcgis.com/home/item.html?id=0d5695666b4c46d6abb5715fc0572d6b
+const basemap = new VectorTileLayer({
+  url: "https://basemaps.arcgis.com/b2/arcgis/rest/services/World_Basemap/VectorTileServer"
 });
+basemap.loadStyle(parisStyle);
 
 const webscene = new WebScene({
   basemap: new Basemap({
@@ -28,7 +30,7 @@ const buildingsLayer = new SceneLayer({
   url: "http://maps.esrifrance.fr/server/rest/services/Hosted/Batiments_Remarquables_Paris/SceneServer/layers/0",
   elevationInfo: {
     mode: "absolute-height",
-    offset: 0.5
+    offset: 10
   },
   renderer: new SimpleRenderer({
     symbol: new MeshSymbol3D({
@@ -39,7 +41,6 @@ const buildingsLayer = new SceneLayer({
             colorMixMode: "replace"
           },
           edges: new SketchEdges3D({
-            //color: [244, 66, 113, 1], //pink
             color: [121, 69, 211, 1],
             size: 2,
             extensionLength: 3

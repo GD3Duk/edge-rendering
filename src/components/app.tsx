@@ -33,14 +33,17 @@ export default class App extends React.Component<any, State> {
     this.setState({
       currentScene: type
     });
-    if (history.pushState && type) {
-      const newurl = `${window.location.protocol}//${window.location.host + window.location.pathname}?scene=${type}`;
+    if (history.pushState) {
+      let newurl = `${window.location.protocol}//${window.location.host + window.location.pathname}`
+      if (type) {
+        newurl += `?scene=${type}`;
+      }
       window.history.pushState({ path : newurl }, '', newurl);
     }
+
   }
 
   render() {
-    console.log(this.state.currentScene);
     return (
       <div id="container">
         <WebSceneView webscene = { this.state.currentScene }/>
