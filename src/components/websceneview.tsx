@@ -6,6 +6,7 @@ import watchUtils = require("esri/core/watchUtils");
 import urbanScene from "./scenes/urban";
 import touristicScene from "./scenes/touristic";
 import nightScene from "./scenes/night";
+import oldScene from "./scenes/old";
 
 
 import * as React from "react";
@@ -85,6 +86,9 @@ export default class WebSceneView extends React.Component<WebsceneProps> {
             fov: 20
           });
         });
+      break;
+      case "old":
+        this.view.map = oldScene;
       break;
     }
   }

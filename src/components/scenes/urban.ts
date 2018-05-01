@@ -82,7 +82,8 @@ const buildingsLayer = new SceneLayer({
     ]
   })
 });
-var oldAreaLayer = new FeatureLayer({
+
+const oldAreaLayer = new FeatureLayer({
   url: "https://services2.arcgis.com/cFEFS0EWrhfDeVw9/ArcGIS/rest/services/helsinki_construction_area/FeatureServer/0",
   renderer: new SimpleRenderer({
     symbol: new PolygonSymbol3D({
