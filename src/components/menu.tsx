@@ -21,11 +21,17 @@ export default class Menu extends React.Component<MenuProps, any> {
           <h1 className="title">Edge rendering</h1>
           <p>For city visualizations:
             <span className="urban"
-            onClick = {(event: any) => this.props.handleSceneChange("urban")}
+              onClick = {(event: any) => this.props.handleSceneChange("urban")}
             > Helsinki old buildings</span>,
-            <span className="touristic"> Famous buildings in Paris</span>,
-            <span className="night"> Manhattan by night</span>,
-            <span className="old"> Old scene of Lyon</span>.
+            <span className="touristic"
+              onClick = {(event: any) => this.props.handleSceneChange("touristic")}
+            > Famous buildings in Paris</span>,
+            <span className="night"
+              onClick = {(event: any) => this.props.handleSceneChange("night")}
+            > Manhattan by night</span>,
+            <span className="old"
+              onClick = {(event: any) => this.props.handleSceneChange("old")}
+            > Old scene of Lyon</span>.
           </p>
           <p className="info"> using <a href="https://developers.arcgis.com/javascript/" target="_blank">ArcGIS API for JS </a>
           and data from awesome contributors to <a href="https://livingatlas.arcgis.com/en/" target="_blank">The Living Atlas</a>.
