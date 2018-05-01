@@ -1,6 +1,7 @@
 import * as React from "react";
 import * as urban from "../assets/urban.png";
 import * as touristic from "../assets/touristic.png";
+import * as night from "../assets/night.png";
 
 interface MenuProps {
   handleSceneChange(event: any): void;
@@ -27,6 +28,9 @@ export default class Menu extends React.Component<MenuProps, any> {
           </div>
           <div className="menu-item">
             <img src={touristic} alt="urban visualization" onClick = {(event: any) => this.props.handleSceneChange("touristic")}/>
+          </div>
+          <div className="menu-item">
+            <img src={night} alt="urban visualization" onClick = {(event: any) => this.props.handleSceneChange("night")}/>
           </div>
         </div>
       </div>

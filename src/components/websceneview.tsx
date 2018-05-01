@@ -24,25 +24,16 @@ export default class WebSceneView extends React.Component<WebsceneProps> {
   componentDidMount() {
     this.view = new SceneView({
       container: "view",
-      map: nightScene,
       qualityProfile: "high",
       environment: {
         lighting: {
           directShadowsEnabled: true,
           ambientOcclusionEnabled: false,
         }
-      },
-      camera: {
-        position: {
-          latitude: 40.74322863137903,
-          longitude: -73.99479961980691,
-          z: 490.647746627219
-        },
-        tilt: 66,
-        heading: 44
       }
     });
 
+    (window as any).view = this.view;
 
   }
 
@@ -78,7 +69,22 @@ export default class WebSceneView extends React.Component<WebsceneProps> {
             }
           });
         });
-
+      break;
+      case "night":
+        this.view.map = nightScene;
+        watchUtils.whenTrueOnce(this.view, 'ready', () => {
+          this.view.camera = new Camera({
+            position: {
+              spatialReference: SpatialReference.WebMercator,
+              x: -8235954.5169841675,
+              y: 4972365.210819486,
+              z: 2567.442529133521
+            },
+            tilt: 42,
+            heading: 357.74,
+            fov: 20
+          });
+        });
       break;
     }
   }
