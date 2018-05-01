@@ -10,3 +10,10 @@ body,
   font-family: 'Roboto', sans-serif;
 }
 
+a {
+  text-decoration: none;
+  border-bottom: 1px dashed black;
+  color: black;
+  cursor: pointer;
+}
+

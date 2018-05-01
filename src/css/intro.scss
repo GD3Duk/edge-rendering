@@ -1,4 +1,4 @@
-$titleFont: 'Permanent Marker', cursive;
+@import 'variables';
 
 .intro {
   position: absolute;
@@ -23,6 +23,7 @@ $titleFont: 'Permanent Marker', cursive;
 
 .description {
   padding: 1em;
+  max-width: 400px;
 }
 
 .title {
@@ -46,8 +47,64 @@ $titleFont: 'Permanent Marker', cursive;
   cursor: pointer;
 }
 
-.menu-item img:hover {
-  box-shadow: 1px 2px 4px rgba(0, 0, 0, .5);
+.info {
+  font-size: 0.7em;
+}
+
+span {
+  cursor: pointer;
+}
+
+span.urban {
+  color: $urbanColor;
+}
+
+span.night {
+  color: $nightColor;
+}
+
+span.touristic {
+  color: $touristicColor;
+}
+
+span.old{
+  color: $oldColor;
+}
+
+.description span:hover {
+  font-weight: bold;
+}
+
+img.urban {
+  border: 4px solid $urbanColorTransparent;
+}
+
+img.urban:hover {
+  border: 4px solid $urbanColor;
+}
+
+img.touristic {
+  border: 4px solid $touristicColorTransparent;
+}
+
+img.touristic:hover {
+  border: 4px solid $touristicColor;
+}
+
+img.night {
+  border: 4px solid $nightColorTransparent;
+}
+
+img.night:hover {
+  border: 4px solid $nightColor;
+}
+
+img.old {
+  border: 4px solid $oldColorTransparent
+}
+
+img.old:hover {
+  border: 4px solid $oldColor;
 }
 
 @media screen and (orientation: portrait) {
