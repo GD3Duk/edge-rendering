@@ -1,12 +1,14 @@
 ## Edge Rendering
 
-In this project I use edge rendering and vector tile basemaps to visualize 3D urban environments on the web. Such visualizations could be used for urban projects or for touristic maps.
+![project_screenshot](./images/screenshot.png)
 
-Most 3D city web visualization look like this:
+See the live project [here](http://raluca-nicola.net/edge-rendering/index.html).
+
+Currently, most 3D city web visualization look like this:
 
 ![ny_buildings.png](./images/ny_buildings.png)
 
-What could they look like when (ab)using edge rendering?
+The contrast is very poor and it's hard to understand the shape of the buildings. In this project I use edge rendering for more than just displaying the building shape. Customizing the edges, combined with a nice vector tile basemap can create a whole new style and personlize the map. Such visualizations could afterwards be used for urban projects or for touristic maps.
 
 #### Urban planning visualization
 
@@ -29,10 +31,11 @@ symbol: new MeshSymbol3D({
 });
 ```
 
-[Helsinki buildings on ArcGIS Online](http://www.arcgis.com/home/item.html?id=5ecba5273b2d41ff9f6f1eb33f238d18)
+Data: [Helsinki buildings on ArcGIS Online](http://www.arcgis.com/home/item.html?id=5ecba5273b2d41ff9f6f1eb33f238d18)
 
+---
 
-#### Touristic map:
+#### Paris, a touristic (scene) view
 
 ![paris_touristic](./images/paris_touristic.png)
 
@@ -54,12 +57,11 @@ symbol: new MeshSymbol3D({
 });
 ```
 
-[Buildings by Esri France](http://www.arcgis.com/home/item.html?id=6833ae218ffb40d591f4b0f802f3f069)
+Data: [Buildings by Esri France](http://www.arcgis.com/home/item.html?id=6833ae218ffb40d591f4b0f802f3f069), [Vector tile basemap by Jaime Nieves](http://www.arcgis.com/home/item.html?id=0d5695666b4c46d6abb5715fc0572d6b)
 
-[Vector tile basemap by Jaime Nieves](http://www.arcgis.com/home/item.html?id=0d5695666b4c46d6abb5715fc0572d6b)
+---
 
-
-#### The James Bond type of map...the 3D James Bond type of map:
+#### The James Bond type of map...the 3D James Bond type of map
 
 ![nova_3d](./images/nova_3d.png)
 
@@ -77,9 +79,9 @@ symbol: new MeshSymbol3D({
 });
 ```
 
-[New York building data provided by DoITT on ArcGIS Online](https://tiles.arcgis.com/tiles/cFEFS0EWrhfDeVw9/arcgis/rest/services/Buildings_Manhattan/SceneServer)
+Data: [New York building data provided by DoITT on ArcGIS Online](https://tiles.arcgis.com/tiles/cFEFS0EWrhfDeVw9/arcgis/rest/services/Buildings_Manhattan/SceneServer), [Nova basemap by Esri Basemaps team](http://www.arcgis.com/home/item.html?id=8d91bd39e873417ea21673e0fee87604)
 
-[Nova basemap by Esri Basemaps team](http://www.arcgis.com/home/item.html?id=8d91bd39e873417ea21673e0fee87604)
+---
 
 #### Oldies but goldies style
 
@@ -99,9 +101,7 @@ symbol: new MeshSymbol3D({
 })
 ```
 
-[Lyon building data by Esri France](http://www.arcgis.com/home/item.html?id=49a3382716e841aeb8f79fc1f388e0f1)
-
-[Modern antique basemap by Esri basemaps team](http://www.arcgis.com/home/item.html?id=effe3475f05a4d608e66fd6eeb2113c0)
+Data: [Lyon building data by Esri France](http://www.arcgis.com/home/item.html?id=49a3382716e841aeb8f79fc1f388e0f1), [Modern antique basemap by Esri basemaps team](http://www.arcgis.com/home/item.html?id=effe3475f05a4d608e66fd6eeb2113c0)
 
 ## Setup
 
