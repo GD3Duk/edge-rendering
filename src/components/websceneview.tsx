@@ -32,6 +32,11 @@ export default class WebSceneView extends React.Component<WebsceneProps> {
           directShadowsEnabled: true,
           ambientOcclusionEnabled: true,
         }
+      },
+      constraints: {
+        altitude: {
+          max: 3000
+        }
       }
     });
 
