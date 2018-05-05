@@ -1,21 +1,19 @@
 ## Edge Rendering
 
-In this project I use edge rendering and vector tile basemaps to visualize 3D urban environments on the web. Such visualization could be used for urban projects or for touristic maps.
+In this project I use edge rendering and vector tile basemaps to visualize 3D urban environments on the web. Such visualizations could be used for urban projects or for touristic maps.
 
 Most 3D city web visualization look like this:
 
-![ny_buildings_arcgis.png](./images/ny_buildings_arcgis.png)
-![ny_buildings_mapbox.png](./images/ny_buildings_mapbox.png)
-![ny_buildings_cesium.png](./images/ny_buildings_cesium.png)
+![ny_buildings.png](./images/ny_buildings.png)
 
 What could they look like when (ab)using edge rendering?
 
-Like a city visualization in an urban project:
+#### Urban planning visualization
 
 ![urban_viz](./images/urban_viz.png)
 
 ```ts
-defaultSymbol: new MeshSymbol3D({
+symbol: new MeshSymbol3D({
   symbolLayers: [
     new FillSymbol3DLayer({
       material: {
@@ -34,7 +32,7 @@ defaultSymbol: new MeshSymbol3D({
 [Helsinki buildings on ArcGIS Online](http://www.arcgis.com/home/item.html?id=5ecba5273b2d41ff9f6f1eb33f238d18)
 
 
-or like a touristic map (and what better city than Paris to show off a touristic map):
+#### Touristic map:
 
 ![paris_touristic](./images/paris_touristic.png)
 
@@ -61,7 +59,7 @@ symbol: new MeshSymbol3D({
 [Vector tile basemap by Jaime Nieves](http://www.arcgis.com/home/item.html?id=0d5695666b4c46d6abb5715fc0572d6b)
 
 
-The James Bond type of map...in 3D:
+#### The James Bond type of map...the 3D James Bond type of map:
 
 ![nova_3d](./images/nova_3d.png)
 
@@ -83,26 +81,45 @@ symbol: new MeshSymbol3D({
 
 [Nova basemap by Esri Basemaps team](http://www.arcgis.com/home/item.html?id=8d91bd39e873417ea21673e0fee87604)
 
-And those awesome bird view old maps might look something like this when rendered in 3D on the web:
+#### Oldies but goldies style
 
 ![old_map](./images/old_map.png)
 
 
 ```ts
-renderer: new SimpleRenderer({
-  symbol: new MeshSymbol3D({
-    symbolLayers: [
-      new FillSymbol3DLayer({
-        edges: new SolidEdges3D({
-          color: [0, 0, 0, 0.7],
-          size: 2,
-        })
+symbol: new MeshSymbol3D({
+  symbolLayers: [
+    new FillSymbol3DLayer({
+      edges: new SolidEdges3D({
+        color: [0, 0, 0, 0.7],
+        size: 2,
       })
-    ]
-  })
+    })
+  ]
 })
 ```
 
 [Lyon building data by Esri France](http://www.arcgis.com/home/item.html?id=49a3382716e841aeb8f79fc1f388e0f1)
 
 [Modern antique basemap by Esri basemaps team](http://www.arcgis.com/home/item.html?id=effe3475f05a4d608e66fd6eeb2113c0)
+
+## Setup
+
+```
+git clone https://github.com/RalucaNicola/edge-rendering.git
+
+npm install
+
+// start local project
+npm run start
+
+// build for production
+npm run build
+```
+
+View this project live at: http://raluca-nicola.net/edge-rendering/index.html
+
+
+[MIT License](./LICENSE)
+
+Forks, PRs and new style suggestions are welcome!
