@@ -24,7 +24,7 @@
 .description {
   padding: 1em;
   max-width: 400px;
-  line-height: 1.5em;
+  line-height: 1.4em;
 }
 
 .title {
@@ -119,6 +119,10 @@ img.old:hover {
 @media screen and (orientation: portrait) {
   .menu-item {
     width: 80%;
+  }
+
+  .menu {
+    border-left: none;
   }
 
   .description.below {
